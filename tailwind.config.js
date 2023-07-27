@@ -1,16 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.js',
+    './app/**/*.js',
   ],
   theme: {
     extend: {
+      colors: {
+        mainColor: "var(--main-color)",
+        mainColorLight: "var(--main-color-light)",
+
+        secondColor: "var(--second-color)",
+        secondColorLight: "var(--second-color-light)",
+      },
+      screens: {
+        xs: "420px"
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "mainGradient": 
+          "linear-gradient(to top left, var(--background-start), var(--background-end))"
+      },
+      boxShadow: {
+
+      },
+      fontFamily: {
+        bitter: ['var(--font-bitter)', 'system-ui', 'serif'],
+        ubuntu: ['var(--font-ubuntu)', '-apple-system', 'sans-serif'],
       },
     },
   },

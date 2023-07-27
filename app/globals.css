@@ -2,26 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start: white;
+  --background-end: white;
+
+  --main-color: #67bca1;
+  --main-color-light: #68c2a6;
+  --text-clr: rgba(30, 41, 59, .9); /* slate-800*/
+}
+.dark {
+    --background-start: #102205;
+    --background-end: #222f19;
+    --text-clr: rgba(243, 244, 246, .6) /* gray-100 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+::selection {
+  @apply text-mainColor bg-black;
+}
+
+*,
+::before,
+::after {
+  @apply duration-[50ms] ease-out
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply font-ubuntu;
+  color: var(--text-clr)
+}
+body::before {
+  @apply fixed w-full h-full bg-mainGradient;
+  content: "";
+}
+
+
+h1,h2, h3,h4,h5,h6 {
+  @apply text-mainColor capitalize font-bitter !font-bold;
+}
+h1 {
+  @apply text-current !text-4xl sm:!text-5xl xl:!text-6xl mb-8 dark:text-gray-100/90;
+}
+h1 span {
+  @apply text-mainColor;
+}
+h3,
+.heading {
+  @apply !text-3xl !mb-2;
+}
+.title {
+  @apply bg-gray-100 dark:bg-emerald-950 w-fit p-1 px-2;
+}
+.title::before {
+  content: "\2714";
+  margin-right: 5px;
+}
+
+
+.btn-primary {
+  @apply p-2 px-8 capitalize border-[1px] font-bitter font-bold border-mainColor text-mainColor
+         dark:hover:bg-emerald-950 hover:opacity-80 dark:hover:opacity-100 
+        active:translate-x-1 active:translate-y-1 active:shadow-none;
+  box-shadow: 4px 4px 0 0;
+}
+
+
+.ragab-img {
+  @apply border-[1px] border-current duration-500 ease-out dark:text-black overflow-hidden 
+}
+
+.items-list li {
+  @apply  text-slate-800/80 hover:text-slate-800/100 active:text-black
+        dark:text-gray-100/60 dark:hover:text-gray-100/80 dark:active:text-gray-100
+}
+li.active {
+  @apply !text-black dark:!text-gray-100 scale-125;
+}
+
+
+/* Starting developing tool-label */
+/* Main Source is fontawesome.com */
+/* But in my way :D*/
+[aria-label] {
+  position: relative;
+  background-color: transparent;
+}
+
+[aria-label]::before, 
+[aria-label]::after {
+  @apply absolute bottom-full left-1/2 -translate-x-1/2 w-max
+         capitalize text-xs text-white opacity-0;
+  content: "";
+  transition: all 0.18s ease-out 0.18s;
+  pointer-events: none; /*isolate it as different element not related ot it*/
+}
+
+[aria-label]::before {
+  @apply py-2 px-4 mb-[5px] rounded-[4px] bg-black;
+  content: attr(aria-label);
+}
+[aria-label]::after {
+  @apply border-[5px] mb-[-5px] border-transparent border-t-black;
+}
+
+[aria-label]:hover::before,
+[aria-label]:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -5px);
 }

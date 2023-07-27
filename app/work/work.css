@@ -1,0 +1,9 @@
+.work-page .projects,
+.work-page .apps {
+    display: grid;
+    gap: 2rem;
+}
+.work-page .apps {
+    @apply max-sm:!grid-cols-1;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}

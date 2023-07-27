@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contact-form label {
+    margin-bottom: .5rem;
+}
+
+.contact-form label > span {
+    display: block;
+    margin-bottom: .25rem;
+    letter-spacing: 2px;
+}
+
+.contact-form span > span {
+    opacity: .6;
+}
+
+.contact-form input,
+.contact-form textarea {
+    @apply w-full p-2 bg-white/90 dark:bg-emerald-950/20 dark:text-mainColor
+            outline-none border-2  dark:border-emerald-900/20  
+            focus:rounded-md focus:border-black/80 dark:focus:border-emerald-900/80;
+}
+
+.contact-form button {
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+/* 
+    background: radial-gradient(79.69% 102.24% at 100% 100.11%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(89.7% 115.09% at 3.43% 2.75%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), #764ABC;
+    background-blend-mode: overlay, overlay, normal;
+    box-shadow: 0 4px 0 #d5d5d5;
+    
+*/
