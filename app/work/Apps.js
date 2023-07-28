@@ -26,23 +26,23 @@ export default function Apps({data}) {
   return (
     <section className="apps">
       {
-        data.map(({name, description, srcImg}, i) => (
+        data.map(({name, description, srcImg, link}, i) => (
           <figure key={i} className=" bg-gray-100/50 dark:bg-black rounded-md w-full max-w-[550px] mx-auto overflow-hidden grid grid-rows-[auto,1fr]"> 
-            <div className=" h-[300px] overflow-hidden bg-red-400">
+            <a href={link || "#"} className=" h-[300px] overflow-hidden bg-red-400">
               {
                 srcImg 
                 && 
-                <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full pointer-events-none" />
+                <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full object-cover pointer-events-none" />
               }
-            </div>
-            <figcaption className="p-4 flex flex-col justify-between">
-              <h4 className="">{name}</h4>
-              <p className="my-2">{description}</p>
-              <div className="flex justify-between items-end font-bold">
-                <a href="#" className="flex items-end"><Github width={30} className="block" /> Source code</a>
-                <span className=" italic">(#{String(i+1).padStart(String(data.length).length, 0)} / {data.length})</span>
-              </div>
+            </a>
+            <figcaption className="p-4">
+              <h4>{name}</h4>
+              <p className=" my-2">{description}</p>
             </figcaption>
+            <div className="flex justify-between items-end px-4 py-2 border-t-2 dark:border-slate-800 font-bold">
+              <a href="#" className="flex items-end hover:opacity-70"><Github width={30} className="block" /> Source code</a>
+              <span className="italic opacity-50">(#{String(i+1).padStart(String(data.length).length, 0)} / {data.length})</span>
+            </div>
           </figure>
         ))
       }
