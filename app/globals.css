@@ -86,7 +86,6 @@ li.active {
 /* But in my way :D*/
 [aria-label] {
   position: relative;
-  background-color: transparent;
 }
 
 [aria-label]::before, 

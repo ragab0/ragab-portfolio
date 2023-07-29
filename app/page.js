@@ -8,7 +8,7 @@ export default function Home() {
       <div className='mt-16 lg:mt-0 text-center lg:text-start'>
         <p className='mb-4 text-secondColorLight'>Salamu Alaykum,</p>
         <h1>
-          {"{"} i&apos;m <span>ragab</span> eid {"}"} <span className='block w-fit mx-auto lg:inline'>;</span>
+          {"{"} i&apos;m <span>ragab</span> eid {"} ;"}
         </h1>
         <p className='max-w-lg my-8'>
           I&apos;m a web developer from Egypt, Africa. I build beautiful, dynamic, and user-friendly web applications with great user-experience.

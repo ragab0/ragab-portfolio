@@ -24,10 +24,10 @@ export default function Apps({data}) {
     
 
   return (
-    <section className="apps">
+    <section className="apps grid  gap-8">
       {
         data.map(({name, description, srcImg, link}, i) => (
-          <figure key={i} className=" bg-gray-100/50 dark:bg-black rounded-md w-full max-w-[550px] mx-auto overflow-hidden grid grid-rows-[auto,1fr]"> 
+          <figure key={i} className=" bg-gray-100/50 dark:bg-black rounded-md overflow-hidden w-full max-w-[550px] mx-auto  grid grid-rows-[auto,1fr]"> 
             <a href={link || "#"} className=" h-[300px] overflow-hidden bg-red-400">
               {
                 srcImg 
@@ -40,7 +40,7 @@ export default function Apps({data}) {
               <p className=" my-2">{description}</p>
             </figcaption>
             <div className="flex justify-between items-end px-4 py-2 border-t-2 dark:border-slate-800 font-bold">
-              <a href="#" className="flex items-end hover:opacity-70"><Github width={30} className="block" /> Source code</a>
+              <a href="#" className="flex items-end hover:opacity-80"><Github width={30} className="block" /> Source code</a>
               <span className="italic opacity-50">(#{String(i+1).padStart(String(data.length).length, 0)} / {data.length})</span>
             </div>
           </figure>

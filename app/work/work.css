@@ -1,9 +1,19 @@
-.work-page .projects,
-.work-page .apps {
-    display: grid;
-    gap: 2rem;
-}
 .work-page .apps {
     @apply max-sm:!grid-cols-1;
     grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+
+.work-page .projects figure:nth-of-type(2n) {
+    flex-flow: row-reverse;
+}
+
+.work-page .scrolling {
+    --w: 2px;
+    --h: 30vh;
+    display: block;
+    position: relative;
+    background: linear-gradient(140deg, #203a07 -19.44%, #324e28 44.12%, rgba(121, 153, 66, 0.24) 117.57%);
+    width: var(--w);
+    height: var(--h);
+    left: calc(50% - var(--w));
 }

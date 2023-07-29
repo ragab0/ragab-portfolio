@@ -1,6 +1,6 @@
 'use client';
 import VanillaTilt from "vanilla-tilt";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { projectsApi } from "@/assets/data/projectsApi";
 import { appsApi } from "@/assets/data/appsApi";
 import Projects from "./Projects";
@@ -35,7 +35,7 @@ export default function page() {
           <p>You also can get on the source code on github.</p>
           <br />
         </div>
-        <ul className="mx-auto flex items-center gap-2 w-fit border-b-2 border-current">
+        <ul className="mx-auto flex items-center gap-2 w-fit border-current">
           {
             combination.map((c, i) => (
               <li key={i}
