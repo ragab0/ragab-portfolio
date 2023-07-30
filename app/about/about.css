@@ -28,5 +28,5 @@
 
 .about-page ul.skills li {
     @apply p-3 w-full flex gap-2 items-center cursor-pointer
-    bg-gray-100 hover:bg-transparent dark:bg-emerald-950;
+    bg-gray-100 hover:!bg-transparent dark:bg-emerald-950;
 }

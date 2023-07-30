@@ -84,7 +84,7 @@ export default function page() {
           <header><h3>Skills</h3></header>
           <article>
             <h4 className='title'>Programming skills</h4>
-            <ul className='skills mt-2 gap-3'>
+            <ul className='skills mt-2 gap-3 bg-blend-difference z-[999999999] relative '>
               {
                 skills.map(({name,LogoSrc}, i) => (
                   <li aria-label={name}>

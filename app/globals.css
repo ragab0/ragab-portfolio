@@ -110,3 +110,9 @@ li.active {
   opacity: 1;
   transform: translate(-50%, -5px);
 }
+/* 
+#cursor {
+  --x: 0;
+  --y: 0;
+  background-image: radial-gradient(600px at var(--x) var(--y), rgb(55 130 61 / 7%), transparent 80%);
+} */

@@ -13,17 +13,28 @@ export default function page() {
     "message": "",
   }
   const [formData, setFormData] = useState(initState)
+  const [success, setSuccess] = useState(null);
+  
+  async function submitHandler(e) {
+    e.preventDefault();
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    const { success } = await res.json();
+    setStatus(success ? 'success' : 'error');
+  }
+  
 
   function valueHandler(e) {
     const { name, value:newValue } = e.target;
     setFormData(old => ({...old, [name]: newValue}));
   }
-  function submitHandler(e) {
-    e.preventDefault();
-    console.log(formData);
-  }
+  
   return (
-    <form className="contact-form grid gap-4 max-w-7xl px-4 md:px-6 py-12 rounded-md">
+    <form className="contact-form grid gap-4 max-w-7xl px-4 md:px-6 py-12 rounded-md" onSubmit={submitHandler}>
         <label>
           <span>Name <span>(required)</span></span>
           <input 
@@ -60,9 +71,7 @@ export default function page() {
           > 
           </textarea>
         </label>
-        <Link href="/about">
-          <button className='btn-primary w-full'>Submit</button>
-        </Link>
+        <button className='btn-primary w-full'>Submit</button>
     </form>
   )
 }

@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Bitter, Ubuntu } from "next/font/google";
 import './globals.css';
+import Cursor from '@/components/Cursor';
 
 
 export const metadata = {
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
       <body className={`${bitter.variable}`}>
         <div className='relative'>
           <main className='relative min-h-screen px-4 mx-auto pb-32 max-w-7xl'>
+            <Cursor />
             <Navbar />
             {children}
           </main>
