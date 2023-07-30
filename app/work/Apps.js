@@ -35,7 +35,7 @@ export default function Apps({data}) {
                 <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full object-cover pointer-events-none" />
               }
             </a>
-            <figcaption className="p-4">
+            <figcaption className="p-4 pb-0">
               <h4>{name}</h4>
               <p className=" my-2">{description}</p>
             </figcaption>

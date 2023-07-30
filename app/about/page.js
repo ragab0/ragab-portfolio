@@ -34,7 +34,9 @@ export default function page() {
           }
         </ul>
         <h3 alt='ragab resume'>
-          <button className='btn-primary w-full'>Resume</button>
+          <button className='btn-primary w-full'>
+            <a href="https://ragab0.github.io/Ragab-Resume/">Resume</a>
+          </button>
         </h3>
       </header>
       <main className='about-paillers'>

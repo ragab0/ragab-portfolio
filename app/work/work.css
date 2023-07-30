@@ -1,12 +1,3 @@
-.work-page .apps {
-    @apply max-sm:!grid-cols-1;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-}
-
-.work-page .projects figure:nth-of-type(2n) {
-    flex-flow: row-reverse;
-}
-
 .work-page .scrolling {
     --w: 2px;
     --h: 30vh;
@@ -16,4 +7,21 @@
     width: var(--w);
     height: var(--h);
     left: calc(50% - var(--w));
+}
+
+.work-page .apps {
+    @apply max-sm:!grid-cols-1;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+
+
+.work-page .projects figure {
+    @apply max-md:flex-wrap;
+}
+.work-page .projects figure:nth-of-type(2n) {
+    @apply md:flex-row-reverse md:justify-between;
+}
+
+.work-page .projects figure > * {
+    @apply w-full md:w-1/2
 }

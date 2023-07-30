@@ -18,12 +18,13 @@ export default function Apps({data}) {
   return (
     <>
       <span className="scrolling"></span>
-      <section className="projects mx-auto">
+      <section className="projects">
         {
           data.map(({name, description, skills, srcImg, link}, i) => (
             <figure key={i} className="flex my-16 gap-4 overflow-hidden rounded-md p-4 hover:bg-gray-100 dark:hover:bg-emerald-900/25 duration-300 ease-out"> 
-              <a href={link || "#"} className="w-2/3 transition-none self-center overflow-hidden rounded-[inherit] h-[450px] bg-red-400 text-current">
-                <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full object-cover pointer-events-none" />
+              <a href={link || "#"} className="transition-none self-center overflow-hidden rounded-[inherit] h-[450px] bg-red-400 text-current">
+                <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full object-cover hover:scale-110" />
+                {/* pointer-events-none  */}
               </a>
               <figcaption className="py-2 px-4 max-w-md ">
                   <h4 className=" text-2xl">{name}</h4>
@@ -42,7 +43,6 @@ export default function Apps({data}) {
                     <Github width={30} className="block" /> Source code
                   </a>
               </figcaption>
-
             </figure>
           ))
         }
