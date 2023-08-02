@@ -1,7 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import "./form.css";
-import Link from "next/link";
 
 
 export default function page() {
@@ -15,23 +15,28 @@ export default function page() {
   const [formData, setFormData] = useState(initState)
   const [success, setSuccess] = useState(null);
   
-  async function submitHandler(e) {
-    e.preventDefault();
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
-
-    const { success } = await res.json();
-    setStatus(success ? 'success' : 'error');
-  }
-  
 
   function valueHandler(e) {
     const { name, value:newValue } = e.target;
     setFormData(old => ({...old, [name]: newValue}));
   }
+
+
+  async function submitHandler(e) {
+    e.preventDefault();
+    const res = await fetch('/api/contact/', {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/json' 
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const { success } = await res.json();
+    setSuccess(success ? 'success' : 'error');
+    console.log(success);
+  }
+
   
   return (
     <form className="contact-form grid gap-4 max-w-7xl px-4 md:px-6 py-12 rounded-md" onSubmit={submitHandler}>
@@ -53,7 +58,7 @@ export default function page() {
             onChange={valueHandler}
           />
         </label>
-                <label>
+        <label>
           <span>Subject <span>(required)</span></span>
           <input 
             name="subject" 

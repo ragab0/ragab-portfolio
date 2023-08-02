@@ -27,20 +27,14 @@
 }
 
 
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: var(--background-end);
+*::-webkit-scrollbar {
+  width: 7px;
+  background-color: var(--background-start);
 }
-
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 100, 0, 0.7);
-  border-radius: 50px;
+  @apply rounded-2xl bg-gray-300 hover:bg-gray-400/70 active:bg-gray-400 
+         dark:bg-green-900/80 dark:hover:bg-green-900 dark:active:bg-green-800;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 100, 0, 1);
-}
-
 
 
 *,
@@ -48,6 +42,7 @@
 ::after {
   @apply duration-[50ms] ease-out
 }
+
 
 body {
   @apply font-ubuntu;
@@ -90,7 +85,7 @@ body h3,
 
 
 .ragab-img {
-  @apply border-[1px] border-current duration-500 ease-out dark:text-black overflow-hidden 
+  @apply bg-red-400 border-[1px] border-current duration-500 ease-out dark:text-black overflow-hidden 
 }
 
 .items-list li {

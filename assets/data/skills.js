@@ -9,6 +9,7 @@ import Js from "@/assets/svgs/skills/VscodeIconsFileTypeJsOfficial"
 import Json from "@/assets/svgs/skills/VscodeIconsFileTypeJsonOfficial"
 import Next from "@/assets/svgs/skills/VscodeIconsFileTypeLightNext"
 import Npm from "@/assets/svgs/skills/VscodeIconsFileTypeNpm"
+import MarkDown from "@/assets/svgs/skills/MarkDown"
 import Python from "@/assets/svgs/skills/VscodeIconsFileTypePython"
 import React from "@/assets/svgs/skills/VscodeIconsFileTypeReactjs"
 import Sass from "@/assets/svgs/skills/VscodeIconsFileTypeSass (1)"
@@ -53,6 +54,10 @@ export default [
     LogoSrc: Npm,
   },
   {
+    name: "MarkDown",
+    LogoSrc: MarkDown,
+  },
+  {
     name: "redux",
     LogoSrc: Redux,
   },
@@ -77,7 +82,7 @@ export default [
     LogoSrc: Sass,
   },
   {
-    name: "Webpack",
+    name: "webpack",
     LogoSrc: Webpack,
   },
   {

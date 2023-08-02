@@ -12,7 +12,7 @@ export default function page() {
   return (
     <div className="about-page dark:max-md:pt-0">
       <header className='md:sticky top-12 left-0 max-md:mb-14'>
-        <div className='ragab-img w-[200] h-[200px] md:h-[300px] max-md:rounded-full bg-red-400 shadow-[4px_4px_0_0] max-md:shadow-[0px_0px_0_5px]'>
+        <div className='ragab-img w-[200] h-[200px] md:h-[300px] max-md:rounded-full shadow-[4px_4px_0_0] max-md:shadow-[0px_0px_0_5px]'>
           {/* Using the same image for saving internet bandwitch TO introduce a great user-expercine and a better optimization web  */}
           <Image alt="Ragab eid, ragab0" 
                  src={Ragab} 

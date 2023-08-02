@@ -137,6 +137,10 @@ const step_2 = [
     description: "",
     srcImg: step_2_22,
   },{
+    name: "Joke App",
+    description: "Built with Webpack",
+    srcImg: null,
+  },{
     name: "",
     description: "",
     srcImg: null,
