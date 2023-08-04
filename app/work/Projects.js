@@ -20,7 +20,7 @@ export default function Apps({data}) {
       <span className="scrolling"></span>
       <section className="projects">
         {
-          data.map(({name, description, skills, srcImg, link}, i) => (
+          data.map(({name, description, skills, srcImg, link, gitLink}, i) => (
             <figure key={i} className="flex my-16 gap-4 overflow-hidden rounded-md p-4 hover:bg-gray-100 dark:hover:bg-emerald-900/25 duration-300 ease-out"> 
               <a href={link || "#"} className="transition-none self-center overflow-hidden rounded-[inherit] h-[450px] bg-red-400 text-current">
                 <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full object-cover hover:scale-110" />
@@ -39,7 +39,7 @@ export default function Apps({data}) {
                     )
                   )}
                   </ul>
-                  <a href="#" className="flex items-end hover:opacity-80 font-bold ">
+                  <a href={gitLink} className="flex items-end hover:opacity-80 font-bold ">
                     <Github width={30} className="block" /> Source code
                   </a>
               </figcaption>

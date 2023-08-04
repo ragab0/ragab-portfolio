@@ -13,7 +13,6 @@ export default function page() {
     "message": "",
   }
   const [formData, setFormData] = useState(initState)
-  const [success, setSuccess] = useState(null);
   
 
   function valueHandler(e) {
@@ -33,7 +32,6 @@ export default function page() {
     });
 
     const { success } = await res.json();
-    setSuccess(success ? 'success' : 'error');
     console.log(success);
   }
 

@@ -11,7 +11,6 @@ import step_2_05 from "@/assets/imgs/second_step/05.png";
 import step_2_06 from "@/assets/imgs/second_step/06.png";
 import step_2_07 from "@/assets/imgs/second_step/07.png";
 import step_2_08 from "@/assets/imgs/second_step/08.png";
-// import step_2_09 from "@/assets/imgs/second_step/09.png";
 import step_2_10 from "@/assets/imgs/second_step/10.png";
 import step_2_11 from "@/assets/imgs/second_step/11.png";
 import step_2_12 from "@/assets/imgs/second_step/12.png";
@@ -26,125 +25,199 @@ import step_2_20 from "@/assets/imgs/second_step/20.png";
 import step_2_21 from "@/assets/imgs/second_step/21.png";
 import step_2_22 from "@/assets/imgs/second_step/22.png";
 
+import feedback from "@/assets/imgs/apps/feedback.png";
+import rocket from "@/assets/imgs/apps/rocket_project.png";
+import a_legend from "@/assets/imgs/apps/a_legend.png";
 
 
 
+
+
+const domain_1 = "https://step-one.onrender.com/";
+const git_1 = "https://github.com/ragab0/STEP_1-React-First-4-apps/";
 const step_1 = [
   {
-    name: "MyBest ReactApp",
+    name: "1-MyBest-ReactApp",
     description: "My First code that i wrote in React. First static webpage i build in React",
     srcImg: step_1_01,
+    link: domain_1 + "01-First-Scrim",
+    gitLink: git_1,
   },{
-    name: "airbnb",
+    name: "2-airbnb",
     description: "My Second code that i wrote in React. Second static webpage i build in React",
     srcImg: step_1_02,
+    link: domain_1 + "02-Sec-Scrim",
+    gitLink: git_1,
   },{
-    name: "Meme Generator",
+    name: "3-Meme-Generator",
     description: "My Third code that i wrote in React. Third static webpage i build in React",
     srcImg: step_1_03,
+    link: domain_1 + "03-Third-Scrim",
+    gitLink: git_1,
   },{
-    name: "Tenzis",
+    name: "4-Tenzis",
     description: "My Fourth code that i wrote in React. Fourth static webpage i build in React",
     srcImg: step_1_04,
+    link: domain_1 + "04-Fourth-Scrim",
+    gitLink: git_1,
   }
 
 ]
 
 
+const domain_2 = "https://step-two.onrender.com/";
+const git_2 = "https://github.com/ragab0/STEP_2-React-21-Projects/tree/master/src/";
 const step_2 = [
   {
-    name: "birthday buddy",
+    name: "01-birthday-reminder",
     description: "",
     srcImg: step_2_01,
+    link: domain_2 + "01-birthday-reminder",
+    gitLink: git_2 + "01-birthday-reminder",
   },{
-    name: "tours",
+    name: "02-tours",
     description: "",
     srcImg: step_2_02,
+    link: domain_2 + "02-tours",
+    gitLink: git_2 + "02-tours",
   },{
-    name: "reviews",
+    name: "03-reviews",
     description: "",
     srcImg: step_2_03,
+    link: domain_2 + "03-reviews",
+    gitLink: git_2 + "03-reviews",
   },{
-    name: "accordion",
+    name: "04-accordion",
     description: "",
     srcImg: step_2_04,
+    link: domain_2 + "04-accordion",
+    gitLink: git_2 + "04-accordion",
   },{
-    name: "menu",
+    name: "05-menu",
     description: "",
     srcImg: step_2_05,
+    link: domain_2 + "05-menu",
+    gitLink: git_2 + "05-menu",
   },{
-    name: "tabs",
+    name: "06-tabs",
     description: "",
     srcImg: step_2_06,
+    link: domain_2 + "06-tabs",
+    gitLink: git_2 + "06-tabs",
   },{
-    name: "slider",
+    name: "07-slider",
     description: "",
     srcImg: step_2_07,
+    link: domain_2 + "07-slider",
+    gitLink: git_2 + "07-slider",
   },{
-    name: "lorem ipsum",
+    name: "08-lorem-ipsum",
     description: "",
     srcImg: step_2_08,
+    link: domain_2 + "08-lorem-ipsum",
+    gitLink: git_2 + "08-lorem-ipsum",
   },{
-    name: "grocery bud",
+    name: "10-grocery-bud",
     description: "",
     srcImg: step_2_10,
+    link: domain_2 + "10-grocery-bud",
+    gitLink: git_2 + "10-grocery-bud",
   },{
-    name: "navbar",
+    name: "11-navbar",
     description: "",
     srcImg: step_2_11,
+    link: domain_2 + "11-navbar",
+    gitLink: git_2 + "11-navbar",
   },{
-    name: "sidebar and modal",
+    name: "12-sidebar-modal",
     description: "",
     srcImg: step_2_12,
+    link: domain_2 + "12-sidebar-modal",
+    gitLink: git_2 + "12-sidebar-modal",
   },{
-    name: "strapi menu",
+    name: "13-stripe-submenus",
     description: "",
     srcImg: step_2_13,
+    link: domain_2 + "13-stripe-submenus",
+    gitLink: git_2 + "13-stripe-submenus",
   },{
-    name: "cart",
+    name: "14-cart",
     description: "",
     srcImg: step_2_14,
+    link: domain_2 + "14-cart",
+    gitLink: git_2 + "14-cart",
   },{
-    name: "mix master",
+    name: "15-cocktails",
     description: "",
     srcImg: step_2_15,
+    link: domain_2 + "15-cocktails",
+    gitLink: git_2 + "15-cocktails",
   },{
-    name: "markdown preview",
+    name: "16-markdown-preview",
     description: "",
     srcImg: step_2_16,
+    link: domain_2 + "16-markdown-preview",
+    gitLink: git_2 + "16-markdown-preview",
   },{
-    name: "random person",
+    name: "17-random-person",
     description: "",
     srcImg: step_2_17,
+    link: domain_2 + "17-random-person",
+    gitLink: git_2 + "17-random-person",
   },{
-    name: "pagination",
+    name: "18-pagination",
     description: "",
     srcImg: step_2_18,
+    link: domain_2 + "18-pagination",
+    gitLink: git_2 + "18-pagination",
   },{
-    name: "unsplash images",
+    name: "19-unsplash-images",
     description: "",
     srcImg: step_2_19,
+    link: domain_2 + "19-stock-photos",
+    gitLink: git_2 + "19-stock-photos",
   },{
-    name: "dark mode",
+    name: "20-dark-mode",
     description: "",
     srcImg: step_2_20,
+    link: domain_2 + "20-dark-mode",
+    gitLink: git_2 + "20-dark-mode",
   },{
-    name: "movies DB",
+    name: "21-movie-db",
     description: "",
     srcImg: step_2_21,
+    link: domain_2 + "21-movie-db",
+    gitLink: git_2 + "21-movie-db",
   },{
-    name: "hacker news",
+    name: "22-hacker-news",
     description: "",
     srcImg: step_2_22,
-  },{
-    name: "Joke App",
-    description: "Built with Webpack",
-    srcImg: null,
-  },{
-    name: "",
-    description: "",
-    srcImg: null,
+    link: domain_2 + "22-hacker-news",
+    gitLinkk: git_2 + "22-hacker-news",
   },
 ]
 
-export const appsApi = [...step_1, ...step_2]
+
+const apps = [
+  {
+    name: "rocket-app",
+    description: "",
+    srcImg: rocket,
+    link: "https://ragab-blog-portfolio.vercel.app/",
+    gitLink: "https://github.com/ragab0/Rocket_Project"
+  },{
+    name: "Blogspot-app",
+    description: "",
+    srcImg: a_legend,
+    link: "https://blog-portfolio-eight.vercel.app/",
+    gitLink: "https://github.com/ragab0/Blog_Portfolio",
+  },{
+    name: "feedback-app",
+    description: "",
+    srcImg: feedback,
+    link: "https://feedback-project-beta.vercel.app/feedback/",
+    gitLink: "https://github.com/ragab0/Feedback_project",
+  },
+]
+
+export const appsApi = [step_1, step_2, apps]

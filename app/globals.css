@@ -43,7 +43,9 @@
   @apply duration-[50ms] ease-out
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   @apply font-ubuntu;
   color: var(--text-clr)

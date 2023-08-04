@@ -17,18 +17,20 @@ export async function POST(req) {
     },  
   });
 
-  // send mail with defined transport object
-  const info = await transporter.sendMail({
-    from: email,
+  // defining the transport object
+  const options = {
     to: process.env.MY_MAIL,
-    subject: `${name} - ${subject}`,
-    text: message,
-  })
-
-  if (info.rejected) {
-    return NextResponse.json({ success: false, message: "Failed to send" })
+    subject: `Ragab - ${subject}`,
+    text: `name: ${name}\nEmail: ${email}\n\n${message}`,
   }
 
-  return NextResponse.json({ success: true, message: "Congrats email has been sent" })
+  // send mail with 
+  transporter.sendMail(options, function(err, info) {
+    console.log(info.response());
+    if (err) {
+      return NextResponse.json({ success: false, message: "Failed to send" })
 
+    }
+    return NextResponse.json({ success: info.response(), message: "Congrats email has been sent" })
+  })
 }

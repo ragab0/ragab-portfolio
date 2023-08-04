@@ -1,17 +1,20 @@
 'use client';
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Cursor() {
   
-  function cursorHandler(e, cursor) {
-    cursor.style.setProperty("background-image", `radial-gradient(600px at ${e.clientX + "px"} ${e.clientY + "px"}, rgb(55 130 61 / 7%), transparent 80%`);
+  function cursorHandler(e, cursor, darkCursor) {
+    if (document.documentElement.classList.contains("dark")) {
+      cursor.style.setProperty("background-image", `radial-gradient(600px at ${e.clientX + "px"} ${e.clientY + "px"}, rgb(55 130 61 / 7%), transparent 80%`);
+    }
+
     // Another way you can use tailwind with it;
     // cursor.style.setProperty("--x", e.clientX + "px");
     // cursor.style.setProperty("--y", e.clientY + "px");
   }
 
   useEffect(function() {
-    const cursor = document.getElementById("cursor");
+    const cursor = document.querySelector("#cursor");
     document.onmousemove= (e) => cursorHandler(e, cursor);
     return function() {
       document.removeEventListener("mousemove", cursorHandler);
