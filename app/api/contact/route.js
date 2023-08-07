@@ -25,12 +25,9 @@ export async function POST(req) {
   }
 
   // send mail with 
-  transporter.sendMail(options, function(err, info) {
-    console.log(info.response());
-    if (err) {
-      return NextResponse.json({ success: false, message: "Failed to send" })
-
-    }
-    return NextResponse.json({ success: info.response(), message: "Congrats email has been sent" })
-  })
+  const info = await transporter.sendMail(options);
+  if (!info.ok) {
+    return NextResponse.json({success: false})
+  }
+  return NextResponse.json({success: true})
 }
