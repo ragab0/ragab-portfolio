@@ -7,7 +7,7 @@ import Cursor from '@/components/Cursor';
 
 export const metadata = {
   title: "Ragab Eid - Personal Portfolio",
-  description: "Ragab Eid - Personal Portfolio. Show Ragab's Resume, Skills, Projects and mailing me",
+  description: "Ragab Eid - Personal Portfolio. Show Ragab's Resume, Skills, Projects and mailing him",
   icon: "/",
 }
 

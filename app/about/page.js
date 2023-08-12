@@ -43,14 +43,14 @@ export default function page() {
         <section>
           <header><h3>Who is Ragab ?</h3></header>
           <article>
-            <p>I'm a passionate software developer, specialized in web development, I build beautiful, dynamic,
-              and user-friendly web applications with great user-experience.
+            <p>I'm a passionate software developer, specialized in web development, I'm taking your hand from beginning to build a beautiful, dynamic,
+              and user-friendly web applications with a great user-experience.
             </p>
             <br />
             <p>
-              I've been a few years in programming. In this duration I've learned a lot of technologies at my field
-              to build cool products. So, please don't hesitate to <a href='/contact' className=' font-bold'>contact</a> me if you need a beautiful web application,
-              or if you have an opportunity that matches my skills.
+              I've been a few years in programming. In this duration I've learned and learning a lot of technologies and tools 
+              to build cool products. In fact i can't do all that without you So, please don't hesitate to <a href='/contact' className=' font-bold'>contact</a>,
+              And if you alsoo have a good opportunity that matches my skills too.
             </p>
           </article>
         </section>

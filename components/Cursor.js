@@ -5,7 +5,7 @@ export default function Cursor() {
   
   function cursorHandler(e, cursor, darkCursor) {
     if (document.documentElement.classList.contains("dark")) {
-      cursor.style.setProperty("background-image", `radial-gradient(600px at ${e.clientX + "px"} ${e.clientY + "px"}, rgb(55 130 61 / 7%), transparent 80%`);
+      cursor.style.setProperty("background-image", `radial-gradient(600px at ${e.clientX + "px"} ${e.clientY + "px"}, rgb(55 130 61 / 5%), transparent 80%`);
     }
 
     // Another way you can use tailwind with it;

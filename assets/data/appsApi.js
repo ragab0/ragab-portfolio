@@ -2,6 +2,7 @@ import step_1_01 from "@/assets/imgs/first_step/01.png";
 import step_1_02 from "@/assets/imgs/first_step/02.png";
 import step_1_03 from "@/assets/imgs/first_step/03.png";
 import step_1_04 from "@/assets/imgs/first_step/04.png";
+import step_1_05 from "@/assets/imgs/first_step/05.png";
 
 import step_2_01 from "@/assets/imgs/second_step/01.png";
 import step_2_02 from "@/assets/imgs/second_step/02.png";
@@ -11,6 +12,7 @@ import step_2_05 from "@/assets/imgs/second_step/05.png";
 import step_2_06 from "@/assets/imgs/second_step/06.png";
 import step_2_07 from "@/assets/imgs/second_step/07.png";
 import step_2_08 from "@/assets/imgs/second_step/08.png";
+import step_2_09 from "@/assets/imgs/second_step/09.png";
 import step_2_10 from "@/assets/imgs/second_step/10.png";
 import step_2_11 from "@/assets/imgs/second_step/11.png";
 import step_2_12 from "@/assets/imgs/second_step/12.png";
@@ -24,6 +26,7 @@ import step_2_19 from "@/assets/imgs/second_step/19.png";
 import step_2_20 from "@/assets/imgs/second_step/20.png";
 import step_2_21 from "@/assets/imgs/second_step/21.png";
 import step_2_22 from "@/assets/imgs/second_step/22.png";
+import step_2_23 from "@/assets/imgs/second_step/23.png";
 
 import feedback from "@/assets/imgs/apps/feedback.png";
 import rocket from "@/assets/imgs/apps/rocket_project.png";
@@ -38,7 +41,7 @@ const git_1 = "https://github.com/ragab0/STEP_1-React-First-4-apps/";
 const step_1 = [
   {
     name: "1-MyBest-ReactApp",
-    description: "My First code that i wrote in React. First static webpage i build in React",
+    description: "My First code that i wrote in React. First static webpage i build in React with first feature\ common task: light & dark modes",
     srcImg: step_1_01,
     link: domain_1 + "01-First-Scrim",
     gitLink: git_1,
@@ -50,7 +53,7 @@ const step_1 = [
     gitLink: git_1,
   },{
     name: "3-Meme-Generator",
-    description: "My Third code that i wrote in React. Third static webpage i build in React",
+    description: "My Third code that i wrote in React. And first interactive app as i used event-listeners, forms, and conditional-rendring",
     srcImg: step_1_03,
     link: domain_1 + "03-Third-Scrim",
     gitLink: git_1,
@@ -59,6 +62,12 @@ const step_1 = [
     description: "My Fourth code that i wrote in React. Fourth static webpage i build in React",
     srcImg: step_1_04,
     link: domain_1 + "04-Fourth-Scrim",
+    gitLink: git_1,
+  },{
+    name: "5-markdown-editor",
+    description: "A real app has bugs, built with another company. But we solved them & adding addition great features like [localeStorage]",
+    srcImg: step_1_05,
+    link: domain_1 + "05-Fifth-Scrim",
     gitLink: git_1,
   }
 
@@ -116,6 +125,12 @@ const step_2 = [
     srcImg: step_2_08,
     link: domain_2 + "08-lorem-ipsum",
     gitLink: git_2 + "08-lorem-ipsum",
+  },{
+    name: "09-lorem-ipsum",
+    description: "",
+    srcImg: "",
+    link: "",
+    gitLink: "",
   },{
     name: "10-grocery-bud",
     description: "",
@@ -194,6 +209,12 @@ const step_2 = [
     srcImg: step_2_22,
     link: domain_2 + "22-hacker-news",
     gitLinkk: git_2 + "22-hacker-news",
+  },{
+    name: "23-quiz-app",
+    description: "",
+    srcImg: "",
+    link: "",
+    gitLinkk: "",
   },
 ]
 
@@ -201,19 +222,19 @@ const step_2 = [
 const apps = [
   {
     name: "rocket-app",
-    description: "",
+    description: "Simple first full Acme Rockets website, Built with Nextjs",
     srcImg: rocket,
     link: "https://ragab-blog-portfolio.vercel.app/",
     gitLink: "https://github.com/ragab0/Rocket_Project"
   },{
     name: "Blogspot-app",
-    description: "",
+    description: "Simple blogspot, Built with Nextjs",
     srcImg: a_legend,
     link: "https://blog-portfolio-eight.vercel.app/",
     gitLink: "https://github.com/ragab0/Blog_Portfolio",
   },{
     name: "feedback-app",
-    description: "",
+    description: "Simple Contact and feedback, Practicing on new Nextjs api routes, Built with Nextjs",
     srcImg: feedback,
     link: "https://feedback-project-beta.vercel.app/feedback/",
     gitLink: "https://github.com/ragab0/Feedback_project",

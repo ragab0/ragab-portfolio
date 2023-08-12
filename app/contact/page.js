@@ -43,12 +43,15 @@ export default function page() {
         "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(formData)
+    }).finally(function() {
+      setWaiting(false)
     })
 
-    setWaiting(false)
+    
     if (!res.ok) {
       return newToast("failed", "Opps, mail failed to sent !")
     }
+    setFormData(initState)
     const data = await res.json();
     return newToast("success", "Congrats, mail has sent")
   }
