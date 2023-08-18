@@ -84,11 +84,11 @@ export default function page() {
           <header><h3>Skills</h3></header>
           <article>
             <h4 className='title'>Programming skills</h4>
-            <ul className='skills mt-2 gap-3 bg-blend-difference z-[999999999] relative '>
+            <ul className='skills mt-2 gap-3 bg-blend-difference relative '>
               {
                 skills.map(({name,LogoSrc}, i) => (
                   <li aria-label={name}>
-                    <LogoSrc width={50} height={50} />
+                    {LogoSrc && <LogoSrc width={50} height={50} />}
                     <h4>{name}</h4>
                   </li>
                 ))

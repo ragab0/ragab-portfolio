@@ -1,0 +1,26 @@
+
+.bubbles {
+    opacity: 0;
+    animation: bubbles-anim 100ms linear forwards;
+}
+  
+.bubbles span {
+    animation: span-anim 1000ms infinite alternate;
+}
+
+
+
+@keyframes bubbles-anim {
+    0% {
+      opacity: 0;
+    } 100% {
+      opacity: 100%;
+    }
+}
+@keyframes span-anim {
+    0% {
+      transform: translateY(0);
+    } 100% {
+      transform: translateY(-100%);
+    }
+}

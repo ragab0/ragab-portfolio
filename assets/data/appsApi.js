@@ -31,7 +31,8 @@ import step_2_23 from "@/assets/imgs/second_step/23.png";
 import feedback from "@/assets/imgs/apps/feedback.png";
 import rocket from "@/assets/imgs/apps/rocket_project.png";
 import a_legend from "@/assets/imgs/apps/a_legend.png";
-
+import dontLaugh from "@/assets/imgs/apps/dont-laugh.png";
+import sassApp from "@/assets/imgs/apps/sass_webapp.png";
 
 
 
@@ -222,23 +223,36 @@ const step_2 = [
 const apps = [
   {
     name: "rocket-app",
-    description: "Simple first full Acme Rockets website, Built with Nextjs",
+    description: "Simple full website built in learning tailwindcss.",
     srcImg: rocket,
     link: "https://ragab-blog-portfolio.vercel.app/",
     gitLink: "https://github.com/ragab0/Rocket_Project"
   },{
     name: "Blogspot-app",
-    description: "Simple blogspot, Built with Nextjs",
+    description: "Simple blogspot, Built with Nextjs in learning Nextjs",
     srcImg: a_legend,
     link: "https://blog-portfolio-eight.vercel.app/",
     gitLink: "https://github.com/ragab0/Blog_Portfolio",
   },{
     name: "feedback-app",
-    description: "Simple Contact and feedback, Practicing on new Nextjs api routes, Built with Nextjs",
+    description: "Simple Contact and feedback, Practicing on new Nextjs api routes",
     srcImg: feedback,
     link: "https://feedback-project-beta.vercel.app/feedback/",
     gitLink: "https://github.com/ragab0/Feedback_project",
+  },{
+    name: "Dont-laugh-app",
+    description: "Simple app in learning webpack, the heart of modern tools and techs",
+    srcImg: dontLaugh,
+    link: "#",
+    gitLink: "#",
+  },{
+    name: "SASS-website",
+    description: "A simple website in learning SASS, Built with SASS and webpack",
+    srcImg: sassApp,
+    link: "#",
+    gitLink: "#",
   },
+  
 ]
 
 export const appsApi = [step_1, step_2, apps]
