@@ -28,7 +28,7 @@ export const projectsApi = [
     "link": "https://ragab-resturant.onrender.com",
     "gitLink": "https://github.com/ragab0/React_Resturant",
     "description": ["My First modern full website that i wrote in React, And first full website i used webpack on, So its so closing to my heart.", "Although it the first code that i wrote in React, Its a good writin, and organized code"],
-    "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Webpack", "Figma"],
+    "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Figma"],
   },{
     "name": "GPT-3",
     "srcImg": GPT3,
@@ -50,13 +50,15 @@ export const projectsApi = [
     "gitLink": "https://github.com/ragab0/Ragab-Fitness",
     "description": [" عااااش يا بطـــل…", "For all young man whose i from them. I'm Ragab - the owner, the coach, and the student. I'm alsoo who create it :)", "You'll never need a coach after now as you can learn and choose your favourite plan. Don't worry of choosing a game into your plan as you'll play the best way, the right way", "I used the rapid-API to scrapping the games"],
     "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Nextjs", "Tailwindcss", "Rapid-API", "Figma"],
+    "inProgress": true
   },{
     "name": "Comphy-Store",
     "srcImg": store,
     "link": "https://comphy-store.vercel.app/",
     "gitLink": "https://github.com/ragab0/comfy_store",
-    "description": ["Comphy-Sloth-Store, The Imaginary place where you can show, hope and save the greatest room offers with best price ever as there is no money :)", "Its code is a great written code, and I suggest you to take a look at."],
+    "description": ["Comphy-Sloth-Store, The Imaginary place where you can show, hope and save the greatest room offers", "Developing a great high-quality front-end project by Writing a perfect clean, efficient, and organized code that is also maintainable in the future. with user-friendly features such as filtering, seamless cart functionality, recovering and saving project state in user's localStorage.", "Its a great written code, suggest to take a look at."],
     "skills": ['HTML5', 'CSS3', "JavaScript", "JSON", "Redux", "React", "Nextjs","Tailwindcss", "Figma"],
+    "inProgress": true
   },
 ]
 

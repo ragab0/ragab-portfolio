@@ -21,14 +21,17 @@ export default function Apps({data}) {
       <span className="scrolling"></span>
       <section className="projects">
         {
-          data.map(({name, description, skills, srcImg, link, gitLink}, i) => (
+          data.map(({name, description, skills, srcImg, link, gitLink, inProgress}, i) => (
             <figure key={i} className="flex my-16 gap-4 overflow-hidden rounded-md p-4 hover:bg-gray-100 dark:hover:bg-emerald-900/25 duration-300 ease-out"> 
               <Link href={link || "#"} target="_blank" className="transition-none self-center overflow-hidden rounded-[inherit] h-[450px] bg-red-400 text-current">
                 <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full object-cover hover:scale-110" />
                 {/* pointer-events-none  */}
               </Link>
               <figcaption className="py-2 px-4 max-w-md ">
-                  <h4 className=" text-2xl">{name}</h4>
+                  <h4 className=" text-2xl">
+                    <span>{name} </span>
+                    {inProgress && <span className="cursor-wait text-[.75em] underline text-red-400">InProgress </span>}
+                  </h4>
                   <div className="my-4">{description.map((e, i) => <p key={i} className=" mb-2">{e}</p>)}</div>
                   <ul className="my-4 flex gap-2 flex-wrap">
                     {skills.map((skill, i) => (
