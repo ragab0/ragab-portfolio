@@ -1,6 +1,7 @@
 "client site"
 import Github from "@/assets/svgs/socials/MdiGithub";
 import Image from "next/image"
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Apps({data: datas}) {
@@ -28,14 +29,14 @@ export default function Apps({data: datas}) {
       <section key={j} className="apps grid gap-8 place-content-center mb-32">
         {
           data.map(({name, description, srcImg, link, gitLink}, i) => (
-            <figure key={i} className=" bg-gray-100/50 dark:bg-black rounded-md overflow-hidden w-full max-w-[550px] mx-auto  grid grid-rows-[auto,1fr]"> 
-              <a href={link || "#"} className=" h-[300px] overflow-hidden bg-red-400">
+            <figure key={i} className=" bg-gray-100/50 shadow-md dark:bg-black rounded-md overflow-hidden w-full max-w-[550px] mx-auto  grid grid-rows-[auto,1fr]"> 
+              <Link href={link || "#"} target="_blank" className=" h-[300px] overflow-hidden bg-red-400">
                 {
                   srcImg 
                   && 
                   <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full object-cover pointer-events-none" />
                 }
-              </a>
+              </Link>
               <figcaption className="p-4 pb-0">
                 <h4>{name}</h4>
                 <p className=" my-2">{description}</p>

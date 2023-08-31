@@ -3,6 +3,7 @@ import Resume from "@/assets/imgs/projects/resume.png";
 import Resturant from "@/assets/imgs/projects/resturant.png";
 import GPT3 from "@/assets/imgs/projects/GPT-3.png";
 import HooBank from "@/assets/imgs/projects/hoo-bank.png";
+import Fitness from "@/assets/imgs/projects/fitness.png";
 import store from "@/assets/imgs/projects/comphy.png";
 
   
@@ -26,36 +27,36 @@ export const projectsApi = [
     "srcImg": Resturant,
     "link": "https://ragab-resturant.onrender.com",
     "gitLink": "https://github.com/ragab0/React_Resturant",
-    "description": ["My First modern full website that i wrote in React, So it is my favourite website, So closing to my heart.", "Although it the first code that i wrote in React, Its a good writin, and organized code"],
-    "skills": ['HTML5', 'CSS3', "JavaScript", "React"],
+    "description": ["My First modern full website that i wrote in React, And first full website i used webpack on, So its so closing to my heart.", "Although it the first code that i wrote in React, Its a good writin, and organized code"],
+    "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Webpack", "Figma"],
   },{
     "name": "GPT-3",
     "srcImg": GPT3,
-    "link": "https://ragab-resturant.onrender.com",
+    "link": "https://ragab-gpt-3.vercel.app/",
     "gitLink": "https://github.com/ragab0/GPT-3",
     "description": ["A Modern website built in React and Nextjs, It is the place where you can know more about GPT-3, about the future", "Its a great code writin, and organized code so I suggest you to see the source-code with all love and respect for you :)"],
-    "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Nextjs", "Tailwindcss"],
+    "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Nextjs", "Tailwindcss", "Figma"],
   },{
     "name": "HooBank",
     "srcImg": HooBank,
-    "link": "https://ragab-resturant.onrender.com",
-    "gitLink": "https://github.com/ragab0/GPT-3",
-    "description": ["A Modern website where you can know more about GPT-3, about the future. created in React and nextjs to practice on them specially on", "Its a great code writin, and organized code i suggest you to see it with all love"],
-    "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Nextjs", "Tailwindcss"],
+    "link": "https://ragab-hoo-bank.vercel.app/",
+    "gitLink": "https://github.com/ragab0/Hoo-Bank",
+    "description": ["Take care .. The Next Generation Payment Method. A Modern website where you can handle your business money. created in React and nextjs to practice on them"],
+    "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Nextjs", "Tailwindcss", "Figma"],
   },{
     "name": "Ragab-Fitness",
-    "srcImg": GPT3,
-    "link": "#",
-    "gitLink": "#",
-    "description": [" عااااش يا بطـــل…", "I am - Ragab - the owner, the coach, and the student. I'm alsoo who create it :)", "You'll never need a coach after now as you can learn and choose your favourite plan. Don't worry of choosing a game into your plan as you'll play the best way, the right way", "I used the rapid-API to scrapping the games"],
-    "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Nextjs", "Tailwindcss", "Rapid-API"],
+    "srcImg": Fitness,
+    "link": "https://ragab-fitness.vercel.app/",
+    "gitLink": "https://github.com/ragab0/Ragab-Fitness",
+    "description": [" عااااش يا بطـــل…", "For all young man whose i from them. I'm Ragab - the owner, the coach, and the student. I'm alsoo who create it :)", "You'll never need a coach after now as you can learn and choose your favourite plan. Don't worry of choosing a game into your plan as you'll play the best way, the right way", "I used the rapid-API to scrapping the games"],
+    "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Nextjs", "Tailwindcss", "Rapid-API", "Figma"],
   },{
     "name": "Comphy-Store",
     "srcImg": store,
-    "link": "#",
-    "gitLink": "#",
-    "description": ["Comphy-Sloth-Store, The place where you can buy, show, hope and save the greatest products", "Its code is a great written as I used the basic prinicples of modern tools and technologies like React and Angular by using 1. the mother of all languages JS, 2. Redux not to proof (it can not be used outside React :D) but becuase that it is the mother of managing app-state in a predictable way and 3. webpack the left heart :)"],
-    "skills": ['HTML5', 'CSS3', "JavaScript", "Redux", "Webpack", "Tailwindcss", "Figma"],
+    "link": "https://comphy-store.vercel.app/",
+    "gitLink": "https://github.com/ragab0/comfy_store",
+    "description": ["Comphy-Sloth-Store, The Imaginary place where you can show, hope and save the greatest room offers with best price ever as there is no money :)", "Its code is a great written code, and I suggest you to take a look at."],
+    "skills": ['HTML5', 'CSS3', "JavaScript", "JSON", "Redux", "React", "Nextjs","Tailwindcss", "Figma"],
   },
 ]
 

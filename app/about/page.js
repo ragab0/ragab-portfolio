@@ -3,15 +3,16 @@ import Ragab from '@/assets/imgs/green-img.jpeg';
 import skills from '@/assets/data/skills';
 import experience from '@/assets/data/experience';
 
-import './about.css';
+
 import socials from '@/assets/data/socials';
+import './about.css';
+import Link from 'next/link';
+
 
 export default function page() {
-  // bg-zinc-200 GOOD;
-  // #e4e4e7
   return (
     <div className="about-page dark:max-md:pt-0">
-      <header className='md:sticky top-12 left-0 max-md:mb-14'>
+      <header className='md:sticky top-12 left-0 max-md:mb-14  mx-auto'>
         <div className='ragab-img w-[200] h-[200px] md:h-[300px] max-md:rounded-full shadow-[4px_4px_0_0] max-md:shadow-[0px_0px_0_5px]'>
           {/* Using the same image for saving internet bandwitch TO introduce a great user-expercine and a better optimization web  */}
           <Image alt="Ragab eid, ragab0" 
@@ -23,19 +24,19 @@ export default function page() {
           {
             socials.map(({name, link, Ico}, i) => (
               <li key={i}>
-                <a href={link} 
+                <Link target="_blank" href={link} 
                    aria-label={name} 
                    className='block p-2'
                 >
                   <Ico />
-                </a>
+                </Link>
               </li>
             ))
           }
         </ul>
         <h3 alt='ragab resume'>
           <button className='btn-primary w-full'>
-            <a href="https://ragab0.github.io/Ragab-Resume/">Resume</a>
+            <Link target='_blank' href="https://ragab0.github.io/Ragab-Resume/">Resume</Link>
           </button>
         </h3>
       </header>
@@ -58,8 +59,8 @@ export default function page() {
           <header><h3>Experience</h3></header>
           <div className='content'>
             {
-              experience.map(({title, name, duration}) => (
-                <article>
+              experience.map(({title, name, duration}, i) => (
+                <article key={i}>
                   <div>
                     <h4 className='title'>{title}</h4>
                     <p>{name}</p>
@@ -87,7 +88,7 @@ export default function page() {
             <ul className='skills mt-2 gap-3 bg-blend-difference relative '>
               {
                 skills.map(({name,LogoSrc}, i) => (
-                  <li aria-label={name}>
+                  <li aria-label={name} key={i}>
                     {LogoSrc && <LogoSrc width={50} height={50} />}
                     <h4>{name}</h4>
                   </li>

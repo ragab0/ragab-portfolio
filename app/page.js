@@ -19,7 +19,7 @@ export default function Home() {
         </Link>
       </div>
       <div className='ragab-img max-md:mx-12 shadow-[8px_8px_0_0]'>
-        <Image alt="Ragab eid, ragab0" src={Ragab} className='w-96' />
+        <Image alt="Ragab eid, ragab0" src={Ragab} className='w-96' priority />
       </div>
     </div>
   )

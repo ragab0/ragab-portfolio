@@ -1,6 +1,7 @@
 "client site"
 import Github from "@/assets/svgs/socials/MdiGithub";
 import Image from "next/image"
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Apps({data}) {
@@ -22,10 +23,10 @@ export default function Apps({data}) {
         {
           data.map(({name, description, skills, srcImg, link, gitLink}, i) => (
             <figure key={i} className="flex my-16 gap-4 overflow-hidden rounded-md p-4 hover:bg-gray-100 dark:hover:bg-emerald-900/25 duration-300 ease-out"> 
-              <a href={link || "#"} className="transition-none self-center overflow-hidden rounded-[inherit] h-[450px] bg-red-400 text-current">
+              <Link href={link || "#"} target="_blank" className="transition-none self-center overflow-hidden rounded-[inherit] h-[450px] bg-red-400 text-current">
                 <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full object-cover hover:scale-110" />
                 {/* pointer-events-none  */}
-              </a>
+              </Link>
               <figcaption className="py-2 px-4 max-w-md ">
                   <h4 className=" text-2xl">{name}</h4>
                   <div className="my-4">{description.map((e, i) => <p key={i} className=" mb-2">{e}</p>)}</div>

@@ -18,7 +18,7 @@ const bitter = Bitter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-bitter',
-
+  preload: true
 })
 const ubuntu = Ubuntu({
   weight: ['300','400', '500', '700'],
@@ -26,7 +26,7 @@ const ubuntu = Ubuntu({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-ubuntu',
-
+  preload: true
 })
 
 

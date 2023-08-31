@@ -42,20 +42,19 @@ export default [
     LogoSrc: Jquery,
   },
   {
-    name: "git",
-    LogoSrc: Git,
+    name: "SASS",
+    LogoSrc: Sass,
   },
   {
     name: "figma",
     LogoSrc: Figma,
-  },
-  {
-    name: "npm",
-    LogoSrc: Npm,
-  },
-  {
+  },{
     name: "MarkDown",
     LogoSrc: MarkDown,
+  },
+  {
+    name: "git",
+    LogoSrc: Git,
   },
   {
     name: "redux",
@@ -78,12 +77,15 @@ export default [
     LogoSrc: Jest,
   },
   {
-    name: "SASS",
-    LogoSrc: Sass,
-  },
-  {
     name: "webpack",
     LogoSrc: Webpack,
+  },
+  {
+    name: "npm",
+    LogoSrc: Npm,
+  },{
+    name: "express.js",
+    LogoSrc: Npm,
   },
   {
     name: "python",

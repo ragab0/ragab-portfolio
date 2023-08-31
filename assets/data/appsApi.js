@@ -33,6 +33,7 @@ import rocket from "@/assets/imgs/apps/rocket_project.png";
 import a_legend from "@/assets/imgs/apps/a_legend.png";
 import dontLaugh from "@/assets/imgs/apps/dont-laugh.png";
 import sassApp from "@/assets/imgs/apps/sass_webapp.png";
+import taskManager from "@/assets/imgs/apps/task-manager.png";
 
 
 
@@ -126,13 +127,15 @@ const step_2 = [
     srcImg: step_2_08,
     link: domain_2 + "08-lorem-ipsum",
     gitLink: git_2 + "08-lorem-ipsum",
-  },{
+  },
+  {
     name: "09-lorem-ipsum",
     description: "",
     srcImg: "",
     link: "",
     gitLink: "",
-  },{
+  },
+  {
     name: "10-grocery-bud",
     description: "",
     srcImg: step_2_10,
@@ -210,7 +213,8 @@ const step_2 = [
     srcImg: step_2_22,
     link: domain_2 + "22-hacker-news",
     gitLinkk: git_2 + "22-hacker-news",
-  },{
+  },
+  {
     name: "23-quiz-app",
     description: "",
     srcImg: "",
@@ -221,6 +225,19 @@ const step_2 = [
 
 
 const apps = [
+  {
+    name: "Task-Manager",
+    description: "A simple full-stackk app, Built in Nextjs, Node.js and Express.js .. (ERN APP :D)",
+    srcImg: taskManager,
+    link: "https://task-manager-fullstack.vercel.app/",
+    gitLink: "https://github.com/ragab0/Task-Manager-Fullstack",
+  },{
+    name: "Dont-laugh-app",
+    description: "Simple app in learning webpack, the heart of modern tools and techs",
+    srcImg: dontLaugh,
+    link: "#",
+    gitLink: "#",
+  },
   {
     name: "rocket-app",
     description: "Simple full website built in learning tailwindcss.",
@@ -240,17 +257,11 @@ const apps = [
     link: "https://feedback-project-beta.vercel.app/feedback/",
     gitLink: "https://github.com/ragab0/Feedback_project",
   },{
-    name: "Dont-laugh-app",
-    description: "Simple app in learning webpack, the heart of modern tools and techs",
-    srcImg: dontLaugh,
-    link: "#",
-    gitLink: "#",
-  },{
     name: "SASS-website",
     description: "A simple website in learning SASS, Built with SASS and webpack",
     srcImg: sassApp,
-    link: "#",
-    gitLink: "#",
+    link: "https://ragab0.github.io/SASS_website/",
+    gitLink: "https://github.com/ragab0/SASS_website",
   },
   
 ]

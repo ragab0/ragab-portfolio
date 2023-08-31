@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Toast from "@/components/alert/Alert";
 import "./form.css";
+import Loading from "./loading";
 
 
 export default function page() {
@@ -103,6 +104,7 @@ export default function page() {
             </textarea>
           </label>
           <button className='btn-primary w-full' disabled={isWaiting} >{isWaiting ? "Loading..." : "Submit"}</button>
+          {isWaiting && <Loading />}
       </form>
     </>
   )

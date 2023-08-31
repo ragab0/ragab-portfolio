@@ -10,7 +10,6 @@ module.exports = {
       colors: {
         mainColor: "var(--main-color)",
         mainColorLight: "var(--main-color-light)",
-
         secondColor: "var(--second-color)",
         secondColorLight: "var(--second-color-light)",
       },
@@ -21,11 +20,8 @@ module.exports = {
         "mainGradient": 
           "linear-gradient(to top left, var(--background-start), var(--background-end))"
       },
-      boxShadow: {
-
-      },
       fontFamily: {
-        bitter: ['var(--font-bitter)', 'system-ui', 'serif'],
+        bitter: ['var(--font-bitter)', 'serif'],
         ubuntu: ['var(--font-ubuntu)', '-apple-system', 'sans-serif'],
       },
     },

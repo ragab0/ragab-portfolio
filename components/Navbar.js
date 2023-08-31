@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import Moon from '@/assets/svgs/moon';
 import Sun from '@/assets/svgs/sun';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-
 
 
 const links = [ 
@@ -27,7 +26,7 @@ const links = [
 export default function Navbar() {
   const currentPath = usePathname();
   const [isDark, setDark] = useState(
-    (typeof window !== "undefined") && (JSON.parse(localStorage.getItem("isDark")) ?? true)
+    (typeof window !== "undefined") && (JSON.parse(localStorage.getItem("isDark")) ?? false)
   )
 
   useEffect(() => {
@@ -35,10 +34,10 @@ export default function Navbar() {
     localStorage.setItem("isDark", isDark)
   }, [isDark])
 
-
   function themeHandler(e) {
     setDark(old => !old);
   }
+
 
   return (
     <nav className='mb-16 z-100'>
