@@ -42,7 +42,7 @@ export default function Apps({data: datas}) {
                 <p className=" my-2">{description}</p>
               </figcaption>
               <div className="flex justify-between items-end px-4 py-2 border-t-2 dark:border-slate-800 font-bold">
-                <a href={gitLink || "#"} className="flex items-end hover:opacity-80"><Github width={30} className="block" /> Source code</a>
+                <Link href={gitLink || "#"} className="flex items-end hover:opacity-80"><Github width={30} className="block" /> Source code</Link>
                 <span className="italic opacity-50">(#{String(i+1).padStart(String(data.length).length, 0)} / {data.length})</span>
               </div>
             </figure>

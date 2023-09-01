@@ -212,14 +212,14 @@ const step_2 = [
     description: "",
     srcImg: step_2_22,
     link: domain_2 + "22-hacker-news",
-    gitLinkk: git_2 + "22-hacker-news",
+    gitLink: git_2 + "22-hacker-news",
   },
   {
     name: "23-quiz-app",
     description: "",
-    srcImg: "",
-    link: "",
-    gitLinkk: "",
+    srcImg: step_2_23,
+    link: domain_2 + "23-quiz",
+    gitLink: git_2 + "23-quiz",
   },
 ]
 

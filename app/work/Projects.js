@@ -1,20 +1,9 @@
-"client site"
 import Github from "@/assets/svgs/socials/MdiGithub";
 import Image from "next/image"
 import Link from "next/link";
-import { useEffect } from "react";
 
 export default function Apps({data}) {
 
-  // useEffect(function() {
-  //   const apps = document.querySelectorAll('.projects figure');
-  //   VanillaTilt.init(apps, {
-  //     max: 3,
-  //     perspective: 700,
-  //     speed: 700,
-  //   })
-  // }, [])
-    
 
   return (
     <>
@@ -43,9 +32,9 @@ export default function Apps({data}) {
                     )
                   )}
                   </ul>
-                  <a href={gitLink} className="flex items-end hover:opacity-80 font-bold ">
+                  <Link href={gitLink || "#"} className="flex items-end hover:opacity-80 font-bold ">
                     <Github width={30} className="block" /> Source code
-                  </a>
+                  </Link>
               </figcaption>
             </figure>
           ))
