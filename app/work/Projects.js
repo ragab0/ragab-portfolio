@@ -1,8 +1,9 @@
 import Github from "@/assets/svgs/socials/MdiGithub";
 import Image from "next/image"
 import Link from "next/link";
+import { projectsApi } from "@/assets/data/projectsApi";
 
-export default function Apps({data}) {
+export default function Apps() {
 
 
   return (
@@ -10,7 +11,7 @@ export default function Apps({data}) {
       <span className="scrolling"></span>
       <section className="projects">
         {
-          data.map(({name, description, skills, srcImg, link, gitLink, inProgress}, i) => (
+          projectsApi.map(({name, description, skills, srcImg, link, gitLink, inProgress}, i) => (
             <figure key={i} className="flex my-16 gap-4 overflow-hidden rounded-md p-4 hover:bg-gray-100 dark:hover:bg-emerald-900/25 duration-300 ease-out"> 
               <Link href={link || "#"} target="_blank" className="transition-none self-center overflow-hidden rounded-[inherit] h-[450px] bg-red-400 text-current">
                 <Image alt={name.toLocaleLowerCase()} src={srcImg} className="min-w-full min-h-full object-cover hover:scale-110" />

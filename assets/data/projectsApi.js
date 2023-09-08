@@ -1,10 +1,13 @@
 import Portfolio from "@/assets/imgs/projects/portfolio.png";
 import Resume from "@/assets/imgs/projects/resume.png";
+import FirstReactApps from "@/assets/imgs/projects/first-react-apps.png";
 import Resturant from "@/assets/imgs/projects/resturant.png";
 import GPT3 from "@/assets/imgs/projects/GPT-3.png";
 import HooBank from "@/assets/imgs/projects/hoo-bank.png";
 import Fitness from "@/assets/imgs/projects/fitness.png";
 import store from "@/assets/imgs/projects/comphy.png";
+
+import todoList from "@/assets/imgs/projects/todo-list.png";
 
   
 export const projectsApi = [
@@ -22,6 +25,13 @@ export const projectsApi = [
     "gitLink": "https://github.com/ragab0/Ragab-Resume",
     "description": ["My personal Resume which present me at the field of web development.", "It has the important things about me, my programming skills and my works those related to that field as it a good code written.", "I built it as an interactive website in a way of showing my skills in web building", "Designed by me"],
     "skills": ['HTML5', 'CSS3', 'Tailwindcss'],
+  },{
+    "name": "First-React-Apps",
+    "srcImg": FirstReactApps,
+    "link": "https://ste-two.onrender.com",
+    "gitLink": "https://github.com/ragab0/first-react-apps",
+    "description": ["My first-react-apps that I had built, in order to learn and apply on React, React-Hooks, and React-Router-Dom."],
+    "skills": ['HTML5', 'CSS3', 'JavaScript', 'JSON', 'React'],
   },{
     "name": "Ragab-Resturant",
     "srcImg": Resturant,
@@ -50,7 +60,6 @@ export const projectsApi = [
     "gitLink": "https://github.com/ragab0/Ragab-Fitness",
     "description": [" عااااش يا بطـــل…", "For all young man whose i from them. I'm Ragab - the owner, the coach, and the student. I'm alsoo who create it :)", "You'll never need a coach after now as you can learn and choose your favourite plan. Don't worry of choosing a game into your plan as you'll play the best way, the right way", "I used the rapid-API to scrapping the games"],
     "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Nextjs", "Tailwindcss", "Rapid-API", "Figma"],
-    "inProgress": true
   },{
     "name": "Comphy-Store",
     "srcImg": store,
@@ -58,6 +67,14 @@ export const projectsApi = [
     "gitLink": "https://github.com/ragab0/comfy_store",
     "description": ["Comphy-Sloth-Store, The Imaginary place where you can show, hope and save the greatest room offers", "Developing a great high-quality front-end project by Writing a perfect clean, efficient, and organized code that is also maintainable in the future. with user-friendly features such as filtering, seamless cart functionality, recovering and saving project state in user's localStorage.", "Its a great written code, suggest to take a look at."],
     "skills": ['HTML5', 'CSS3', "JavaScript", "JSON", "Redux", "React", "Nextjs","Tailwindcss", "Figma"],
+    "inProgress": true
+  },{
+    "name": "TODO-List",
+    "srcImg": todoList,
+    "link": "https://todo-tasks-manager.vercel.app",
+    "gitLink": "https://github.com/ragab0/todo-list",
+    "description": ["A todo-list, real todo-list, ", "Its a great written code you'll ever see in useReducer and useContext as i used them to states, suggest to take a look at", "Designed by me :)"],
+    "skills": ['HTML5', 'CSS3', "JavaScript", "JSON", "React", "Nextjs","Tailwindcss", "Figma"],
     "inProgress": true
   },
 ]
