@@ -35,23 +35,22 @@ export default function page() {
           }
         </ul>
         <h3 alt='ragab resume'>
-          <button className='btn-primary w-full'>
-            <Link target='_blank' href="https://ragab0.github.io/Ragab-Resume/">Resume</Link>
-          </button>
+          <Link target='_blank' href="https://ragab0.github.io/Ragab-Resume/" className="btn-primary w-full block text-center">Resume</Link>
         </h3>
       </header>
       <main className='about-paillers'>
         <section>
           <header><h3>Who is Ragab ?</h3></header>
           <article>
-            <p>I'm a passionate software developer, specialized in web development, I'm taking your hand from beginning to build a beautiful, dynamic,
-              and user-friendly web applications with a great user-experience.
+            <p>Hello there, he's a highly motivated web developer, he has different skills in web development 
+              enabling him creating beautiful and coll web applications. He worked on different projects 
+              such as e-commerce websites, e-learning platfroms, beautiful landing pages, and some simple game web apps. 
             </p>
             <br />
             <p>
-              I've been a few years in programming. In this duration I've learned and learning a lot of technologies and tools 
-              to build cool products. In fact i can't do all that without you So, please don't hesitate to <a href='/contact' className=' font-bold'>contact</a>,
-              And if you alsoo have a good opportunity that matches my skills too.
+              As Ragab, I love to work on complex projects that enabling me imporoving from mymself, gaining new expperience, 
+              and also to make the best use of waht i have.
+              So, Please <Link href="/contact" className=' font-bold'>mail me</Link> ans ask for a video call if you have such as an opportunity and let us know more about each other :)
             </p>
           </article>
         </section>
