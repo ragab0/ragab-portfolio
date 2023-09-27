@@ -42,14 +42,14 @@ export default function page() {
         <section>
           <header><h3>Who is Ragab ?</h3></header>
           <article>
-            <p>Hello there, he's a highly motivated web developer, he has different skills in web development 
-              enabling him creating beautiful and coll web applications. He worked on different projects 
+            <p>Hello there, I'm a highly motivated web developer, I have different skills in web development 
+              enabling him creating beautiful and coll web applications. I worked on different projects 
               such as e-commerce websites, e-learning platfroms, beautiful landing pages, and some simple game web apps. 
             </p>
             <br />
             <p>
-              As Ragab, I love to work on complex projects that enabling me imporoving from mymself, gaining new expperience, 
-              and also to make the best use of waht i have.
+              I love to work on complex projects that enabling me imporoving from mymself, gaining new expperience, 
+              in order to make the best use of waht i have.
               So, Please <Link href="/contact" className=' font-bold'>mail me</Link> ans ask for a video call if you have such as an opportunity and let us know more about each other :)
             </p>
           </article>
