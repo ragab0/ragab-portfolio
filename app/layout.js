@@ -1,13 +1,13 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { Bitter, Ubuntu } from "next/font/google";
-import './globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import Cursor from '@/components/Cursor';
+import './globals.css';
 
 
 export const metadata = {
   title: "Ragab Eid - Personal Portfolio",
-  description: "Ragab Eid - Personal Portfolio. Show Ragab's Resume, Skills, Projects and mailing him",
+  description: "Showcase Ragab's Work, Resume, Skills, and also maile him",
   icon: "/favicon.ico",
 }
 

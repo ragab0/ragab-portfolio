@@ -18,8 +18,6 @@ import Tailwind from "@/assets/svgs/skills/VscodeIconsFileTypeTailwind"
 import Webpack from "@/assets/svgs/skills/VscodeIconsFileTypeWebpack"
 
 
-
-
 export default [
   {
     name: "HTML5",

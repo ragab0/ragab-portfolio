@@ -4,23 +4,7 @@ import Sun from '@/assets/svgs/sun';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-
-
-const links = [ 
-  { 
-    name: "home",
-    router: "/",
-  }, {
-    name: "about",
-    router: "/about",
-  }, {
-    name: "work",
-    router: "/work",
-  }, {
-    name: "mail me",
-    router: "/contact",
-  }
-]
+import { links } from '@/assets/data/data';
 
 
 export default function Navbar() {

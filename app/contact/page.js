@@ -1,11 +1,11 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Toast from "@/components/alert/Alert";
-import "./form.css";
 import Loading from "./loading";
+import "./form.css";
 
 
-export default function page() {
+export default function ContactPage() {
   const initState = {
     "name": "",
     "email": "",
@@ -18,7 +18,6 @@ export default function page() {
     (typeof window !== "undefined") && (JSON.parse(localStorage.getItem("formData")) ?? initState)
   )
 
-
   function newToast(type, message) {
     setToasts(old => [...old, <Toast key={old.length} id={old.length} type={type} message={message} />])
   }
@@ -27,12 +26,10 @@ export default function page() {
     const { name, value:newValue } = e.target;
     setFormData(old => ({...old, [name]: newValue}));
   }
-
   
   useEffect(function() {
     localStorage.setItem("formData", JSON.stringify(formData));
   }, [formData])
-
 
   async function submitHandler(e) {
     e.preventDefault();
@@ -48,7 +45,6 @@ export default function page() {
       setWaiting(false)
     })
 
-    
     if (!res.ok) {
       return newToast("failed", "Opps, mail failed to sent !")
     }
@@ -66,45 +62,47 @@ export default function page() {
         }
       </div>
       {/* May some one would change the disabled from the console.. its ok BUT what isn't ok: keeping the functionality working (active) */}
-      <form className="contact-form grid gap-4 max-w-7xl px-4 md:px-6 py-12 rounded-md" onSubmit={(e) => isWaiting ? e.preventDefault() : submitHandler(e)}>
-          <label>
-            <span>Name <span>(required)</span></span>
-            <input required
-              type="text" 
-              name="name" 
-              value={formData.name} 
-              onChange={valueHandler}
-            />
-          </label>
-          <label>
-            <span>Email <span>(required)</span></span>
-            <input required
-              type="email" 
-              name="email" 
-              value={formData.email} 
-              onChange={valueHandler}
-            />
-          </label>
-          <label>
-            <span>Subject <span>(required)</span></span>
-            <input required
-              name="subject" 
-              value={formData.subject} 
-              onChange={valueHandler}
-            />
-          </label>
-          <label>
-            <span>Message <span>(required)</span></span>
-            <textarea required
-              name="message"
-              defaultValue={formData.message}
-              onChange={valueHandler}
-              rows={5}
-            > 
-            </textarea>
-          </label>
-          <button className='btn-primary w-full' disabled={isWaiting} >{isWaiting ? "Loading..." : "Submit"}</button>
-          {isWaiting && <Loading />}
+      <form onSubmit={(e) => isWaiting ? e.preventDefault() : submitHandler(e)}
+        className="contact-form grid gap-4 max-w-7xl px-4 md:px-6 py-12 rounded-md" 
+      >
+        <label>
+          <span>Name <span>(required)</span></span>
+          <input required
+            type="text" 
+            name="name" 
+            value={formData.name} 
+            onChange={valueHandler}
+          />
+        </label>
+        <label>
+          <span>Email <span>(required)</span></span>
+          <input required
+            type="email" 
+            name="email" 
+            value={formData.email} 
+            onChange={valueHandler}
+          />
+        </label>
+        <label>
+          <span>Subject <span>(required)</span></span>
+          <input required
+            name="subject" 
+            value={formData.subject} 
+            onChange={valueHandler}
+          />
+        </label>
+        <label>
+          <span>Message <span>(required)</span></span>
+          <textarea required
+            name="message"
+            defaultValue={formData.message}
+            onChange={valueHandler}
+            rows={5}
+          > 
+          </textarea>
+        </label>
+        <button className='btn-primary w-full' disabled={isWaiting} >{isWaiting ? "Loading..." : "Submit"}</button>
+        {isWaiting && <Loading />}
       </form>
     </>
   )

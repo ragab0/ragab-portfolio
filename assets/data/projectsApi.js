@@ -6,7 +6,6 @@ import GPT3 from "@/assets/imgs/projects/GPT-3.png";
 import HooBank from "@/assets/imgs/projects/hoo-bank.png";
 import Fitness from "@/assets/imgs/projects/fitness.png";
 import store from "@/assets/imgs/projects/comphy.png";
-
 import todoList from "@/assets/imgs/projects/todo-list.png";
 
   
@@ -14,30 +13,30 @@ export const projectsApi = [
   {
     "name": "Ragab-portfolio",
     "srcImg": Portfolio,
-    "link": "#",
+    "link": null,
     "gitLink": "https://github.com/ragab0/ragab-portfolio",
-    "description": ["My personal portfolio which has all my skills, my works, and some of apps that i was practice on", "It is also present me in coding, It is well written as i can write, I built every single feature from scratch without using a lot of librarys, You can see the source of any feature in the comments as i added the sources there", "Designed by me"],
+    "description": ["My personal portfolio where I showcase all of my skills and latest work", "Every single feature had been built from scratch without", "Designed by me"],
     "skills": ['HTML5', 'CSS3', "JavaScript", "JSON","React", "Nextjs", "Tailwindcss"],
   },{
     "name": "Ragab-CV",
     "srcImg": Resume,
     "link": "https://ragab0.github.io/Ragab-Resume/",
     "gitLink": "https://github.com/ragab0/Ragab-Resume",
-    "description": ["My personal Resume which present me at the field of web development.", "It has the important things about me, my programming skills and my works those related to that field as it a good code written.", "I built it as an interactive website in a way of showing my skills in web building", "Designed by me"],
+    "description": ["My personal CV which present me at the field of front-end web development", "It has the important related things about that field, my programming front-end web skills and some of my important projects", "It visual seen, and interactive website with user-friendly features like (download or print) the CV", "Designed by me"],
     "skills": ['HTML5', 'CSS3', 'Tailwindcss'],
   },{
     "name": "First-React-Apps",
     "srcImg": FirstReactApps,
     "link": "https://step-two.onrender.com",
     "gitLink": "https://github.com/ragab0/first-react-apps",
-    "description": ["My first-react-apps that I had built, in order to learn and apply on React, React-Hooks, and React-Router-Dom."],
+    "description": ["My first-react-apps that I had built, in order to learn and apply on React, React-Hooks, and React-Router-Dom", "Designed by me, on the way of John-Smigla React projects website"],
     "skills": ['HTML5', 'CSS3', 'JavaScript', 'JSON', 'React'],
   },{
-    "name": "Ragab-Fitness",
+    "name": "Ramy-Fitness",
     "srcImg": Fitness,
-    "link": "https://ragab-fitness.vercel.app/",
-    "gitLink": "https://github.com/ragab0/Ragab-Fitness",
-    "description": [" عااااش يا بطـــل…", "For all young man whose i from them. I'm Ragab - the owner, the coach, and the student. I'm alsoo who create it :)", "You'll never need a coach after now as you can learn and choose your favourite plan. Don't worry of choosing a game into your plan as you'll play the best way, the right way", "I used the rapid-API to scrapping the games"],
+    "link": "https://ramy-fitness.vercel.app",
+    "gitLink": "https://github.com/ragab0/Ramy-Fitness",
+    "description": [" عااااش يا بطـــل…", "For all young men whose I from them. That is a fitness website - The club of body-building - where you with in 'the coach, and the student'.", "Create your favourite plan as you need. Don't worry of choosing a game into as you'll play it the best way, the right way"],
     "skills": ['HTML5', 'CSS3', "JavaScript", "React", "Nextjs", "Tailwindcss", "Rapid-API", "Figma"],
   },{
     "name": "Ragab-Resturant",
@@ -53,7 +52,7 @@ export const projectsApi = [
     "gitLink": "https://github.com/ragab0/todo-list",
     "description": ["A todo-list, real todo-list, ", "Its a great written code you'll ever see in useReducer and useContext as i used them to states, suggest to take a look at", "Designed by me :)"],
     "skills": ['HTML5', 'CSS3', "JavaScript", "JSON", "React", "Nextjs","Tailwindcss", "Figma"],
-    "inProgress": true
+    "inProgress": true,
   },{
     "name": "GPT-3",
     "srcImg": GPT3,
@@ -68,7 +67,6 @@ export const projectsApi = [
     "gitLink": "https://github.com/ragab0/comfy_store",
     "description": ["Comphy-Sloth-Store, The Imaginary place where you can show, hope and save the greatest room offers", "Developing a great high-quality front-end project by Writing a perfect clean, efficient, and organized code that is also maintainable in the future. with user-friendly features such as filtering, seamless cart functionality, recovering and saving project state in user's localStorage.", "Its a great written code, suggest to take a look at."],
     "skills": ['HTML5', 'CSS3', "JavaScript", "JSON", "Redux", "React", "Nextjs","Tailwindcss", "Figma"],
-    "inProgress": true
   },{
     "name": "HooBank",
     "srcImg": HooBank,

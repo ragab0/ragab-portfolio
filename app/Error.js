@@ -1,4 +1,4 @@
-import Bubbles from '@/components/Bubbles/Bubbles';
+import Bubbles from '@/components/bubbles/Bubbles';
 
 
 export default function Error() {

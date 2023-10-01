@@ -1,7 +1,4 @@
 import Codewars from "../svgs/socials/CibCodewars"
-import Mail from "../svgs/socials/FluentMail20Filled"
-import Glove from "../svgs/socials/HeroiconsGlobeAltSolid"
-import Phone from "../svgs/socials/MaterialSymbolsPhoneEnabled"
 import Github from "../svgs/socials/MdiGithub"
 import Linkedin from "../svgs/socials/MdiLinkedin"
 import Leetcode from "../svgs/socials/TablerBrandLeetcode"
