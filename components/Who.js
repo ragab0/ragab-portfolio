@@ -1,30 +1,54 @@
 import Link from "next/link";
 
-
 export default function Who() {
   return (
     <section>
-      <header><h3>Who is Me ?</h3></header>
+      <header>
+        <h3>Who is Me ?</h3>
+      </header>
       <article>
         <p>
-          Hello there, I'm Ragab, a software developer specillized in web development. I aim to provide great and 
-          un-believable experience for my clients. I have many skills that enables me create interactive and cool 
-          web applications, build accessible and user-friendly websites as I worked on various projects such as 
-          e-commerce websites, e-learning platfroms, beautiful landing pages, and some simple game web apps.
+          Hello there! I'm Ragab Eid, a dedicated software developer with
+          expertise in full-stack web development. My journey is driven by a
+          profound passion for coding and creating meaningful digital
+          experiences.
         </p>
         <br />
         <p>
-          I'm Commited to continous growth, Know new people and learn from each other, I love to work on different 
-          and complex products, enabling me imporove from myself, gaining new experience in order to
-          make the best use of waht i have, and leave an un-forgotten impression.
+          I architect and develop scalable solutions that combine technical
+          excellence with user-centric design. My expertise spans across
+          React.js, Next.js, and various backend technologies such as Node.js
+          and Express.js, allowing me to build everything from dynamic
+          e-commerce platforms and task management apps to sophisticated
+          learning management systems.
         </p>
         <br />
         <p>
-          Have you such as an opportunity? please <Link 
-            href="/contact" className='font-bold'
-          >mail me</Link> and ask for a video call, and let us know more about each other :)
+          What sets me apart is my commitment to writing clean, maintainable
+          code while adhering to industry best practices. I approach each
+          project with a focus on performance, accessibility, and user
+          experience, ensuring that every solution not only meets but exceeds
+          client expectations.
+        </p>
+        <br />
+        <p>
+          I thrive in collaborative environments and am always eager to take on
+          new challenges that push the boundaries of what's possible in web
+          development. Whether it's implementing AI-enhanced features or
+          creating intuitive user interfaces, I'm committed to delivering
+          excellence in every project.
+        </p>
+        <br />
+        <p>
+          <b>Looking for a developer who can turn your vision into reality?</b>{" "}
+          Let's
+          <Link href="/contact" className="font-bold underline">
+            {" "}
+            connect{" "}
+          </Link>
+          and discuss how we can create something extraordinary together.
         </p>
       </article>
     </section>
-  )
+  );
 }
