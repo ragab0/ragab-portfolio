@@ -7,6 +7,7 @@ export default function Ragab(props) {
       height="316"
       fill="none"
       viewBox="0 0 238 316"
+      id="ragab"
       {...props}
     >
       <g fill="#64748B" opacity="0.5">

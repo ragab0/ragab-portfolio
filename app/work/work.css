@@ -1,13 +1,14 @@
 .work-page .scrolling {
-  --w: 2px;
-  --h: 30vh;
+  --w: 5px;
+  --h: 40vh;
+  border-radius: 50px;
   display: block;
   position: relative;
   background: linear-gradient(
     140deg,
-    #203a07 -19.44%,
-    #324e28 44.12%,
-    rgba(121, 153, 66, 0.24) 117.57%
+    var(--navy) -19.44%,
+    var(--light-navy) 44.12%,
+    var(--lightest-navy) 117.57%
   );
   width: var(--w);
   height: var(--h);

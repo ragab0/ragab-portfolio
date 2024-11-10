@@ -16,7 +16,7 @@ export default function Projects() {
             <figure
               key={i}
               className="flex my-16 gap-4 overflow-hidden rounded-md p-4 
-              hover:bg-emerald-900/25 duration-300 ease-out"
+              hover:bg-lightNavy duration-300 ease-out"
             >
               <Link
                 href={link || "#"}
@@ -50,7 +50,7 @@ export default function Projects() {
                 <ul className="my-4 flex gap-2 flex-wrap">
                   {skills.map((skill, i) => (
                     <li
-                      className="p-2 text-sm rounded-2xl cursor-pointer bg-emerald-900/25 hover:!bg-transparent"
+                      className="p-2 text-sm rounded-2xl cursor-pointer bg-lightNavy hover:bg-lightestNavy"
                       aria-label={skill}
                       key={i}
                     >

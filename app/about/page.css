@@ -17,7 +17,7 @@
 
 .about-page ul.skills li {
   @apply p-3 w-full flex gap-2 items-center cursor-pointer
-     hover:!bg-transparent bg-emerald-950 active:scale-90;
+     bg-lightNavy hover:!bg-lightestNavy active:scale-90;
 }
 
 .about-page ul.skills li:hover svg {

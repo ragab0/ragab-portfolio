@@ -1,27 +1,27 @@
+:root {
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --navy-linear: #0a252f; /* #0d3830 little lighter (focused) */
+
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+
+  --main-color-tint: rgba(100, 255, 218, 0.1);
+  --main-color: #64ffda;
+  --main-color-light: #68c2a6;
+  --white: #e6f1ff;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --main-color: #64ffda;
-    --main-color-light: #68c2a6;
-    --text-clr: rgba(30, 41, 59, 0.9); /* slate-800*/
-
-    --primary: red;
-    --secondary: blue;
-    --tertiary: yellow;
-
-    --green: #64ffda;
-    --navy: #0a192f;
-    --dark-slate: #495670;
-  }
-  .dark {
-    --background-start: var(--navy);
-    --background-end: #0a252f; /* #0d3830 little lighter (focused) */
-    --text-clr: rgb(243 244 246 / 0.6);
-  }
-
   ::selection {
     @apply text-mainColor bg-black;
   }
@@ -38,12 +38,12 @@
   }
 
   body {
-    @apply font-main;
-    color: var(--text-clr);
+    @apply font-main text-slate bg-navy;
   }
+
   body::before {
-    @apply fixed w-full h-full bg-mainGradient;
     content: "";
+    @apply fixed w-full h-full bg-mainGradient;
   }
 
   body data {
@@ -56,15 +56,15 @@
   body h4,
   body h5,
   body h6 {
-    @apply text-mainColor capitalize !font-main !font-bold;
+    @apply text-lightestSlate capitalize !font-main !font-bold;
   }
 
   body h1 {
-    @apply text-4xl sm:text-5xl xl:text-6xl mb-8 text-gray-100/90;
+    @apply text-4xl sm:text-5xl xl:text-6xl mb-8;
   }
 
   body h3 {
-    @apply !text-3xl !mb-2;
+    @apply text-4xl mb-6;
   }
 }
 
@@ -74,10 +74,10 @@
   }
 
   .title {
-    @apply bg-emerald-950 w-fit p-1 px-2;
+    @apply w-fit text-2xl;
   }
   .title::before {
-    content: "\2714";
+    content: "\2022";
     margin-right: 5px;
   }
 
@@ -87,15 +87,15 @@
   }
 
   .ragab-img {
-    @apply duration-500 ease-out text-black overflow-hidden;
+    @apply duration-500 ease-out overflow-hidden;
   }
 
   .items-list li {
-    @apply text-gray-100/60 hover:text-gray-100/80 active:text-gray-100;
+    @apply hover:text-lightSlate active:text-lightestSlate;
   }
 
   li.active {
-    @apply !text-gray-100 scale-125;
+    @apply !text-lightestSlate scale-125;
   }
 }
 
@@ -109,7 +109,7 @@
 [aria-label]::before,
 [aria-label]::after {
   @apply absolute bottom-full left-1/2 -translate-x-1/2 w-max
-         capitalize text-xs text-white opacity-0;
+         capitalize text-xs text-lightestSlate opacity-0;
   content: "";
   transition: all 0.18s ease-out 0.18s;
   pointer-events: none; /*isolate it as different element not related ot it*/
@@ -134,3 +134,9 @@
   --y: 0;
   background-image: radial-gradient(600px at var(--x) var(--y), rgb(55 130 61 / 7%), transparent 80%);
 } */
+
+/* my svg image */
+#ragab > g:last-of-type > circle,
+#ragabBig > g:last-of-type > rect:last-of-type {
+  fill: var(--lightest-navy);
+}

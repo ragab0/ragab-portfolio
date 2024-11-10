@@ -5,8 +5,9 @@ import Cursor from "@/components/Cursor";
 import "./globals.css";
 
 export const metadata = {
-  title: "Ragab Eid - Personal Portfolio",
-  description: "Showcase Ragab's Work, Resume, Skills, and also maile him",
+  title: "Ragab Eid",
+  description:
+    "Ragab Eid is a software developer specializing in building exceptional web applications",
   icon: "/favicon.ico",
 };
 
