@@ -4,34 +4,26 @@
 
 @layer base {
   :root {
-    --background-start: white;
-    --background-end: white;
-
-    --main-color: #67bca1;
+    --main-color: #64ffda;
     --main-color-light: #68c2a6;
     --text-clr: rgba(30, 41, 59, 0.9); /* slate-800*/
 
     --primary: red;
     --secondary: blue;
     --tertiary: yellow;
+
+    --green: #64ffda;
+    --navy: #0a192f;
+    --dark-slate: #495670;
   }
   .dark {
-    --background-start: #102205;
-    --background-end: #222f19;
-    --text-clr: rgba(243, 244, 246, 0.6); /* gray-100 */
+    --background-start: var(--navy);
+    --background-end: #0a252f; /* #0d3830 little lighter (focused) */
+    --text-clr: rgb(243 244 246 / 0.6);
   }
 
   ::selection {
     @apply text-mainColor bg-black;
-  }
-
-  *::-webkit-scrollbar {
-    width: 7px;
-    background-color: var(--background-start);
-  }
-  *::-webkit-scrollbar-thumb {
-    @apply rounded-2xl bg-gray-300 hover:bg-gray-400/70 active:bg-gray-400 
-           dark:bg-green-900/80 dark:hover:bg-green-900 dark:active:bg-green-800;
   }
 
   *,
@@ -42,9 +34,11 @@
 
   html {
     scroll-behavior: smooth;
+    color-scheme: dark;
   }
+
   body {
-    @apply font-ubuntu;
+    @apply font-main;
     color: var(--text-clr);
   }
   body::before {
@@ -62,15 +56,11 @@
   body h4,
   body h5,
   body h6 {
-    @apply text-mainColor capitalize !font-bitter !font-bold;
+    @apply text-mainColor capitalize !font-main !font-bold;
   }
 
   body h1 {
-    @apply text-current text-4xl sm:text-5xl xl:text-6xl mb-8 dark:text-gray-100/90;
-  }
-
-  body h1 span {
-    @apply text-mainColor;
+    @apply text-4xl sm:text-5xl xl:text-6xl mb-8 text-gray-100/90;
   }
 
   body h3 {
@@ -84,7 +74,7 @@
   }
 
   .title {
-    @apply bg-gray-100 dark:bg-emerald-950 w-fit p-1 px-2;
+    @apply bg-emerald-950 w-fit p-1 px-2;
   }
   .title::before {
     content: "\2714";
@@ -92,30 +82,20 @@
   }
 
   .btn-primary {
-    @apply p-2 px-8 capitalize border-[1px] font-bitter font-bold border-mainColor text-mainColor
-          dark:hover:bg-emerald-950 hover:opacity-80 dark:hover:opacity-100 
-          active:translate-x-1 active:translate-y-1 active:shadow-none;
-    box-shadow: 4px 4px 0 0;
-  }
-
-  .btn-primary-red {
-    @apply p-2 px-8 capitalize border-[1px] font-bitter font-bold border-red-400 text-red-400
-          dark:hover:bg-red-400/10 hover:opacity-80 dark:hover:opacity-100 
-          active:translate-x-1 active:translate-y-1 active:shadow-none;
-    box-shadow: 4px 4px 0 0;
+    @apply p-2 px-8 capitalize border-[1px] font-mono border-mainColor text-mainColor inline-block
+          shadow-[4px_4px_0_0] active:translate-x-1 active:translate-y-1 active:shadow-none;
   }
 
   .ragab-img {
-    @apply duration-500 ease-out dark:text-black overflow-hidden;
+    @apply duration-500 ease-out text-black overflow-hidden;
   }
 
   .items-list li {
-    @apply text-slate-800/80 hover:text-slate-800/100 active:text-black
-          dark:text-gray-100/60 dark:hover:text-gray-100/80 dark:active:text-gray-100;
+    @apply text-gray-100/60 hover:text-gray-100/80 active:text-gray-100;
   }
 
   li.active {
-    @apply !text-black dark:!text-gray-100 scale-125;
+    @apply !text-gray-100 scale-125;
   }
 }
 

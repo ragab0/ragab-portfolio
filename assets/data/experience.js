@@ -4,4 +4,4 @@ export default [
     name: "Kazomera - Remote",
     duration: "04/2023 - 06/2023",
   },
-]
+];

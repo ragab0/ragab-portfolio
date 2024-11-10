@@ -1,22 +1,21 @@
-import Jquery from "@/assets/svgs/skills/DeviconJquery"
-import Figma from "@/assets/svgs/skills/LogosFigma"
-import Redux from "@/assets/svgs/skills/LogosRedux"
-import Css from "@/assets/svgs/skills/VscodeIconsFileTypeCss"
-import Git from "@/assets/svgs/skills/VscodeIconsFileTypeGit"
-import Html from "@/assets/svgs/skills/VscodeIconsFileTypeHtml"
-import Jest from "@/assets/svgs/skills/VscodeIconsFileTypeJest"
-import Js from "@/assets/svgs/skills/VscodeIconsFileTypeJsOfficial"
-import Json from "@/assets/svgs/skills/VscodeIconsFileTypeJsonOfficial"
-import Next from "@/assets/svgs/skills/VscodeIconsFileTypeLightNext"
-import Npm from "@/assets/svgs/skills/VscodeIconsFileTypeNpm"
-import MarkDown from "@/assets/svgs/skills/MarkDown"
-import Python from "@/assets/svgs/skills/VscodeIconsFileTypePython"
-import React from "@/assets/svgs/skills/VscodeIconsFileTypeReactjs"
-import Sass from "@/assets/svgs/skills/VscodeIconsFileTypeSass (1)"
-import Sql from "@/assets/svgs/skills/VscodeIconsFileTypeSql"
-import Tailwind from "@/assets/svgs/skills/VscodeIconsFileTypeTailwind"
-import Webpack from "@/assets/svgs/skills/VscodeIconsFileTypeWebpack"
-
+import Jquery from "@/assets/svgs/skills/DeviconJquery";
+import Figma from "@/assets/svgs/skills/LogosFigma";
+import Redux from "@/assets/svgs/skills/LogosRedux";
+import Css from "@/assets/svgs/skills/VscodeIconsFileTypeCss";
+import Git from "@/assets/svgs/skills/VscodeIconsFileTypeGit";
+import Html from "@/assets/svgs/skills/VscodeIconsFileTypeHtml";
+import Jest from "@/assets/svgs/skills/VscodeIconsFileTypeJest";
+import Js from "@/assets/svgs/skills/VscodeIconsFileTypeJsOfficial";
+import Json from "@/assets/svgs/skills/VscodeIconsFileTypeJsonOfficial";
+import Next from "@/assets/svgs/skills/VscodeIconsFileTypeLightNext";
+import Npm from "@/assets/svgs/skills/VscodeIconsFileTypeNpm";
+import MarkDown from "@/assets/svgs/skills/MarkDown";
+import Python from "@/assets/svgs/skills/VscodeIconsFileTypePython";
+import React from "@/assets/svgs/skills/VscodeIconsFileTypeReactjs";
+import Sass from "@/assets/svgs/skills/VscodeIconsFileTypeSass (1)";
+import Sql from "@/assets/svgs/skills/VscodeIconsFileTypeSql";
+import Tailwind from "@/assets/svgs/skills/VscodeIconsFileTypeTailwind";
+import Webpack from "@/assets/svgs/skills/VscodeIconsFileTypeWebpack";
 
 export default [
   {
@@ -46,7 +45,8 @@ export default [
   {
     name: "figma",
     LogoSrc: Figma,
-  },{
+  },
+  {
     name: "MarkDown",
     LogoSrc: MarkDown,
   },
@@ -81,7 +81,8 @@ export default [
   {
     name: "npm",
     LogoSrc: Npm,
-  },{
+  },
+  {
     name: "express.js",
     LogoSrc: Npm,
   },
@@ -93,4 +94,4 @@ export default [
     name: "SQL",
     LogoSrc: Sql,
   },
-]
+];

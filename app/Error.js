@@ -1,8 +1,5 @@
-import Bubbles from '@/components/bubbles/Bubbles';
-
+import Bubbles from "@/components/bubbles/Bubbles";
 
 export default function Error() {
-  return (
-    <Bubbles text='Error' error={"Absulotily yea :)"} />
-  )
+  return <Bubbles text="Error" error={"Absulotily yea :)"} />;
 }

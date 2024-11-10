@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
-  content: [
-    './components/**/*.js',
-    './app/**/*.js',
-  ],
+  darkMode: "class",
+  content: ["./components/**/*.js", "./app/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -14,17 +11,16 @@ module.exports = {
         secondColorLight: "var(--second-color-light)",
       },
       screens: {
-        xs: "420px"
+        xs: "420px",
       },
       backgroundImage: {
-        "mainGradient": 
-          "linear-gradient(to top left, var(--background-start), var(--background-end))"
+        mainGradient:
+          "linear-gradient(to top left, var(--background-start), var(--background-end))",
       },
       fontFamily: {
-        bitter: ['var(--font-bitter)', 'serif'],
-        ubuntu: ['var(--font-ubuntu)', '-apple-system', 'sans-serif'],
+        main: ["var(--font-main)", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};
