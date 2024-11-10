@@ -2,7 +2,7 @@ export default function Education() {
   return (
     <section>
       <header>
-        <h3>Education</h3>
+        <h2>Education</h2>
       </header>
       <article>
         <div className="art-content mb-4">

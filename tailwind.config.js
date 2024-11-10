@@ -29,6 +29,9 @@ module.exports = {
       fontFamily: {
         main: ["var(--font-main)", "sans-serif"],
       },
+      boxShadow: {
+        cardShadow: "0 10px 30px -15px var(--navy-shadow)",
+      },
     },
   },
   plugins: [],

@@ -1,21 +1,19 @@
-import Projects from "@/components/Projects";
 import "./work.css";
+import FeaturedProjects from "./components/FeaturedProjects";
+import MoreProjects from "./components/MoreProjects";
 
 export default function WorkPage() {
   return (
     <main className="work-page max-w-7xl rounded-md">
-      <section className=" text-center py-16 mb-0 ">
-        <h1>
-          {"{"} my <span>work</span> {"} "}
-          <span className=" max-lg:block">;</span>
-        </h1>
-        <div>
-          <p>See my latest projects</p>
-          <p>You also can get on the source code on github.</p>
-          <br />
-        </div>
+      <span className="scroll-static-progress"></span>
+      <section className="mt-32">
+        <h2 className="text-4xl mb-12 mx-auto">My latest projects</h2>
+        <FeaturedProjects />
       </section>
-      <Projects />
+      <section className="my-64">
+        <h2 className="text-4xl mb-12 mx-auto">More projects</h2>
+        <MoreProjects />
+      </section>
     </main>
   );
 }

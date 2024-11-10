@@ -4,7 +4,7 @@ export default function Who() {
   return (
     <section>
       <header>
-        <h3>Who is Me ?</h3>
+        <h2>Who is Me ?</h2>
       </header>
       <article>
         <p>

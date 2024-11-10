@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section>
       <header>
-        <h3>Skills</h3>
+        <h2>Skills</h2>
       </header>
       <article>
         <h4 className="title">Programming skills</h4>

@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section>
       <header>
-        <h3>Experience</h3>
+        <h2>Experience</h2>
       </header>
       <div className="content">
         {experience.map(({ title, name, duration }, i) => (

@@ -10,6 +10,7 @@ export default function Navbar() {
     <nav className="mb-16 z-100">
       <div className="py-8 flex justify-center items-center gap-2">
         <button className=" cursor-not-allowed">
+          {/** aria-label="only dark" */}
           <Sun width={48} className="sun block hover:text-white" />
           {/* <CurlyBrackets width={48} className=" fill-current" /> */}
           {/* <span className=" text-2xl">{"</>"}</span> */}

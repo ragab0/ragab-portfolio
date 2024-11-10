@@ -1,32 +1,16 @@
-.work-page .scrolling {
-  --w: 5px;
-  --h: 40vh;
-  border-radius: 50px;
-  display: block;
-  position: relative;
-  background: linear-gradient(
-    140deg,
-    var(--navy) -19.44%,
-    var(--light-navy) 44.12%,
-    var(--lightest-navy) 117.57%
-  );
-  width: var(--w);
-  height: var(--h);
-  left: calc(50% - var(--w));
-}
-
 .work-page .apps {
   @apply max-sm:!grid-cols-1;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
 }
 
-.work-page .projects figure {
-  @apply max-md:flex-wrap;
-}
-.work-page .projects figure:nth-of-type(2n) {
-  @apply md:flex-row-reverse md:justify-between;
+.work-page figure:first-of-type {
+  @apply mt-0;
 }
 
-.work-page .projects figure > * {
-  @apply w-full md:w-1/2;
+.work-page figure {
+  @apply max-md:flex-wrap;
+}
+
+.work-page .featured-projects figure:nth-of-type(2n) {
+  @apply md:flex-row-reverse md:justify-between;
 }
