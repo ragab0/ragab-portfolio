@@ -1,13 +1,27 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Github from "@/assets/svgs/socials/MdiGithub";
-import { moreProjectsApi } from "@/assets/data/projectsApi";
+import { useState } from "react";
 
-export default function MoreProjects() {
+const size = 6;
+
+export default function MoreProjects({ projects = [] }) {
+  const [currentCount, setCurrentCount] = useState(size);
+
+  function moreHandler() {
+    setCurrentCount((o) => o + size);
+  }
+
+  function resetHandler() {
+    setCurrentCount(size);
+  }
+
   return (
     <section className="more-projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-      {moreProjectsApi.map(
-        ({ name, description, skills, srcImg, link, gitLink }, i) => (
+      {projects
+        .slice(0, currentCount)
+        .map(({ name, description, skills, srcImg, link, gitLink }, i) => (
           <figure
             key={i}
             className="flex flex-col w-full gap-4 overflow-hidden rounded-md
@@ -46,7 +60,7 @@ export default function MoreProjects() {
                 <ul className="mt-6 flex gap-2 flex-wrap">
                   {skills.map((skill, i) => (
                     <li
-                      className="rounded-full  pe-1 text-xs font-medium leading-5  cursor-pointer"
+                      className="rounded-full  pe-1 text-xs font-medium leading-5  cursor-pointer capitalize"
                       aria-label={skill}
                       key={i}
                     >
@@ -57,8 +71,19 @@ export default function MoreProjects() {
               </div>
             </figcaption>
           </figure>
-        )
-      )}
+        ))}
+      <div className="self-end col-span-full text-center mt-4">
+        {currentCount >= projects.length ? (
+          <button className={`btn-primary`} onClick={resetHandler}>
+            reset
+            {/* {projects.length - size} */}
+          </button>
+        ) : (
+          <button className={`btn-primary`} onClick={moreHandler}>
+            see more {projects.length - currentCount}
+          </button>
+        )}
+      </div>
     </section>
   );
 }

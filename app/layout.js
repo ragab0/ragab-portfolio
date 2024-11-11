@@ -7,8 +7,7 @@ import "./globals.css";
 export const metadata = {
   title: "Ragab Eid",
   description:
-    "Ragab Eid is a software developer specializing in building exceptional web applications",
-  icon: "/favicon.ico",
+    "A software developer specializing in building exceptional web applications",
 };
 
 const mainFont = Karla({

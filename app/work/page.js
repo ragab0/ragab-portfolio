@@ -1,6 +1,10 @@
 import "./work.css";
 import FeaturedProjects from "./components/FeaturedProjects";
 import MoreProjects from "./components/MoreProjects";
+import {
+  featuredProjectsApi,
+  moreProjectsApi,
+} from "@/assets/data/projectsApi";
 
 export default function WorkPage() {
   return (
@@ -8,11 +12,11 @@ export default function WorkPage() {
       <span className="scroll-static-progress"></span>
       <section className="mt-32">
         <h2 className="text-4xl mb-12 mx-auto">My latest projects</h2>
-        <FeaturedProjects />
+        <FeaturedProjects projects={featuredProjectsApi} />
       </section>
       <section className="my-64">
         <h2 className="text-4xl mb-12 mx-auto">More projects</h2>
-        <MoreProjects />
+        <MoreProjects projects={moreProjectsApi} />
       </section>
     </main>
   );

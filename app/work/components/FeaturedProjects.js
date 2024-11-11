@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Github from "@/assets/svgs/socials/MdiGithub";
-import { featuredProjectsApi } from "@/assets/data/projectsApi";
 
-export default function FeaturedProjects() {
+export default function FeaturedProjects({ projects }) {
   return (
     <section className="featured-projects">
-      {featuredProjectsApi.map(
+      {projects.map(
         (
           { name, description, coreSkills, srcImg, link, gitLink, inProgress },
           i
@@ -42,7 +41,8 @@ export default function FeaturedProjects() {
               <ul className="my-4 flex gap-2 flex-wrap">
                 {coreSkills.map((skill, i) => (
                   <li
-                    className="rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 cursor-pointer"
+                    className="rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 cursor-pointer
+                    capitalize"
                     aria-label={skill}
                     key={i}
                   >
