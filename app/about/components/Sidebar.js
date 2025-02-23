@@ -23,7 +23,7 @@ export default function Sidebar() {
       <h3 alt="Ragab-Resume">
         <Link
           target="_blank"
-          href="https://ragab0.github.io/Ragab-Resume/"
+          href="https://drive.google.com/file/d/1AILE8hj8UjYLoPNA_rwxsYmzgA-ARMhJ/view?usp=sharing"
           className="btn-primary w-full block text-center"
         >
           Resume

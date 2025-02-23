@@ -7,7 +7,15 @@ export default function FeaturedProjects({ projects }) {
     <section className="featured-projects">
       {projects.map(
         (
-          { name, description, coreSkills, srcImg, link, gitLink, inProgress },
+          {
+            name,
+            description,
+            coreSkills,
+            srcImg,
+            link,
+            inProgress,
+            gitLinks = [],
+          },
           i
         ) => (
           <figure
@@ -50,13 +58,17 @@ export default function FeaturedProjects({ projects }) {
                   </li>
                 ))}
               </ul>
-              <Link
-                href={gitLink || "#"}
-                target={gitLink ? "_blank" : "_top"}
-                className="flex items-end hover:opacity-80 font-bold "
-              >
-                <Github width={30} className="block" /> Source code
-              </Link>
+              {gitLinks.map((gitLink, i) => (
+                <Link
+                  key={i}
+                  href={gitLink || "#"}
+                  target={gitLink ? "_blank" : "_top"}
+                  className="flex items-end hover:opacity-80 font-bold "
+                >
+                  <Github width={30} className="block" /> Source code
+                  {!!i && i + 1}
+                </Link>
+              ))}
             </figcaption>
           </figure>
         )

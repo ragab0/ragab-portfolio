@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="home-page lg:mt-32 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-full mx-auto flex flex-col-reverse lg:flex-row items-center justify-between lg:gap-16">
       <div className="mt-16 lg:mt-0 text-center lg:text-start">
-        <p className="mb-4 text-[#64ffda] font-mono">Salamu Alaykum,</p>
+        <p className="mb-4 text-[#64ffda] font-mono">Salamun Alaykum,</p>
         <h1>
           I'm <span>Ragab Eid</span>
         </h1>

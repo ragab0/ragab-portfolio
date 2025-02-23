@@ -21,7 +21,7 @@ export default function MoreProjects({ projects = [] }) {
     <section className="more-projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       {projects
         .slice(0, currentCount)
-        .map(({ name, description, skills, srcImg, link, gitLink }, i) => (
+        .map(({ name, description, skills, srcImg, link, gitLinks }, i) => (
           <figure
             key={i}
             className="flex flex-col w-full gap-4 overflow-hidden rounded-md
@@ -46,13 +46,16 @@ export default function MoreProjects({ projects = [] }) {
               <div>
                 <div className="flex items-start justify-between gab-2 mb-2">
                   <h3 className="mb-0">{name}</h3>
-                  <Link
-                    href={gitLink || "#"}
-                    target={gitLink ? "_blank" : "_top"}
-                    className="flex items-end hover:opacity-80 font-bold "
-                  >
-                    <Github width={25} className="block" />
-                  </Link>
+                  {gitLinks.map((gitLink, i) => (
+                    <Link
+                      href={gitLink || "#"}
+                      target={gitLink ? "_blank" : "_top"}
+                      className="flex items-end hover:opacity-80 font-bold "
+                    >
+                      <Github width={25} className="block" />
+                      {!!i && i + 1}
+                    </Link>
+                  ))}
                 </div>
                 <p className="text-lightSlate">{description}</p>
               </div>

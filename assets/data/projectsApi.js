@@ -1,3 +1,4 @@
+import Nabza from "@/assets/imgs/projects/Nabza/home1.png";
 import EdepediaPreview from "@/assets/imgs/projects/EDEPedia/EDEPedia-preview.png";
 import TodPreview from "@/assets/imgs/projects/TOD/TodPreview2.png";
 import Portfolio from "@/assets/imgs/projects/portfolio.png";
@@ -20,10 +21,40 @@ import Leon from "@/assets/imgs/projects/Leon/Leon.jpg";
 export const featuredProjectsApi = [
   // P01
   {
+    name: "Nabza - نبذة",
+    srcImg: Nabza,
+    link: "https://www.ragab.shop/",
+    gitLinks: [
+      "https://github.com/ragab0/nabza-platform-api",
+      "https://github.com/ragab0/nabza-platform",
+    ],
+    description: `
+      an AI-driven platform helping Arabic speakers to create professional and customizable CVs.
+    `,
+    coreSkills: [
+      "React.js",
+      "React-PDF",
+      "Redux Toolkit",
+      "Next.js",
+      "Yup",
+      "Express.js",
+      "MongoDB",
+      "Passport.js",
+      "Tailwindcss",
+      "Socket.IO",
+      "Amazon S3",
+      "Adobe XD",
+    ],
+  },
+
+  {
     name: "EDEPedia - DEPI Academy",
     srcImg: EdepediaPreview,
     link: "https://lms-depi-final-project.vercel.app/",
-    gitLink: "https://github.com/ragab0/lms-web-based-system",
+    gitLinks: [
+      "https://github.com/ragab0/lms-web-based-system",
+      "https://github.com/ragab0/learning-management-system-api",
+    ],
     description: `
       A Learning Management System to manage and track YouTube-based courses, featuring an admin panel for user management and course approvals, mentor dashboards for course setup, and a student app with progress tracking, interactive messaging, lesson comments, and feedback—offering a seamless learning experience tailored to all user roles
     `,
@@ -40,42 +71,42 @@ export const featuredProjectsApi = [
     ],
   },
 
-  // P02
-  {
-    name: "Assistant TOD",
-    srcImg: TodPreview,
-    link: "https://todo-tasks-manager.vercel.app",
-    gitLink: "https://github.com/ragab0/todo-list",
-    description: `
-    A smart task management app powered by NLP for efficient task handling, featuring a Progressive Web App (PWA) with offline support and WCAG accessibility standards. It includes a drag-and-drop Kanban board with customizable views, role-based user authentication, and integrations with various tools for a seamless user experience
-    `,
-    skills: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "JSON",
-      "React",
-      "Next.js",
-      "TailwindCSS",
-      "Figma",
-    ],
-    coreSkills: [
-      "React.js",
-      "Next.js",
-      "Node.js",
-      "MySQL",
-      "NLP.js",
-      "TailwindCSS",
-    ],
-    inProgress: true,
-  },
+  // // P02
+  // {
+  //   name: "Assistant TOD",
+  //   srcImg: TodPreview,
+  //   link: "https://todo-tasks-manager.vercel.app",
+  //   gitLink: "https://github.com/ragab0/todo-list",
+  //   description: `
+  //   A smart task management app powered by NLP for efficient task handling, featuring a Progressive Web App (PWA) with offline support and WCAG accessibility standards. It includes a drag-and-drop Kanban board with customizable views, role-based user authentication, and integrations with various tools for a seamless user experience
+  //   `,
+  //   skills: [
+  //     "HTML5",
+  //     "CSS3",
+  //     "JavaScript",
+  //     "JSON",
+  //     "React",
+  //     "Next.js",
+  //     "TailwindCSS",
+  //     "Figma",
+  //   ],
+  //   coreSkills: [
+  //     "React.js",
+  //     "Next.js",
+  //     "Node.js",
+  //     "MySQL",
+  //     "NLP.js",
+  //     "TailwindCSS",
+  //   ],
+  //   inProgress: true,
+  // },
 
   // P03
   {
     name: "GPT-3",
     srcImg: GPT3,
     link: "https://ragab-gpt-3.vercel.app/",
-    gitLink: "https://github.com/ragab0/GPT-3",
+    gitLinks: ["https://github.com/ragab0/GPT-3"],
     description: `Responsive landing page built with React, Next.js, and TailwindCSS, transforming a Figma design into a fully functional webpage. Features include AOS scroll animations, cross-browser compatibility, and a user-friendly interface for an engaging and seamless experience`,
     skills: [
       "HTML5",
@@ -104,7 +135,7 @@ export const moreProjectsApi = [
     name: "HooBank",
     srcImg: HooBank,
     link: "https://ragab-hoo-bank.vercel.app/",
-    gitLink: "https://github.com/ragab0/Hoo-Bank",
+    gitLinks: ["https://github.com/ragab0/Hoo-Bank"],
     description: `
       Modern, responsive landing page with Figma design transformation, and cross-browser compatibility
     `,
@@ -114,7 +145,7 @@ export const moreProjectsApi = [
     name: "Comphy-Sloth-Store",
     srcImg: store,
     link: "https://comphy-store.vercel.app/",
-    gitLink: "https://github.com/ragab0/comfy_store",
+    gitLinks: ["https://github.com/ragab0/comfy_store"],
     description: `
     E-Commerce platform
     integrated with internal Express.js API and a file-based database,    
@@ -126,7 +157,7 @@ export const moreProjectsApi = [
     name: "Ramy-Fitness-App",
     srcImg: Fitness,
     link: "https://ramy-fitness.vercel.app",
-    gitLink: "https://github.com/ragab0/Ramy-Fitness",
+    gitLinks: ["https://github.com/ragab0/Ramy-Fitness"],
     description: `عااااش يا بطـــل…`,
     skills: ["Next.js", "Rapid-API", "Figma", "TailwindCSS"],
   },
@@ -135,7 +166,7 @@ export const moreProjectsApi = [
     name: "Noxe-Movies-App",
     srcImg: NoxeImage,
     link: "https://noxe-movies-app.vercel.app",
-    gitLink: "https://github.com/ragab0/noxe-movies-app",
+    gitLinks: ["https://github.com/ragab0/noxe-movies-app"],
     description: `Movie app integrated with TMDP API`,
     skills: [
       "React",
@@ -150,7 +181,7 @@ export const moreProjectsApi = [
     name: "Le-Resturant",
     srcImg: LeResturant,
     link: "https://ragab-resturant.onrender.com",
-    gitLink: "https://github.com/ragab0/React_Resturant",
+    gitLinks: ["https://github.com/ragab0/React_Resturant"],
     description: `Transformed Figma design into responsive webpage`,
     skills: ["React", "Figma", "TailwindCSS"],
   },
@@ -159,7 +190,7 @@ export const moreProjectsApi = [
     name: "friend-simon",
     srcImg: SimonImage,
     link: "https://ragab0.github.io/friend-simon/",
-    gitLink: "https://github.com/ragab0/friend-simon",
+    gitLinks: ["https://github.com/ragab0/friend-simon"],
     description: `Simple portfolio for my friend - Become a Friend and Build Your Portfolio :D`,
     skills: ["HTML5", "CSS3", "Bootstrap-grid-system", "CSS-Columns"],
   },
@@ -168,7 +199,7 @@ export const moreProjectsApi = [
     name: "Elzero_02",
     srcImg: Kasper,
     link: "https://ragab0.github.io/Kasper",
-    gitLink: "https://github.com/ragab0/Kasper",
+    gitLinks: ["https://github.com/ragab0/Kasper"],
     skills: ["HTML5", "CSS3"],
   },
 
@@ -176,7 +207,7 @@ export const moreProjectsApi = [
     name: "resto-restaurant",
     srcImg: Resto,
     link: "https://ragab0.github.io/resto-restaurant",
-    gitLink: "https://github.com/ragab0/resto-restaurant",
+    gitLinks: ["https://github.com/ragab0/resto-restaurant"],
     skills: ["HTML5", "CSS3", "Fontawesome", "Googlefonts"],
   },
 
@@ -184,7 +215,7 @@ export const moreProjectsApi = [
     name: "Elzero_01",
     srcImg: Leon,
     link: "https://ragab0.github.io/Leon/",
-    gitLink: "https://github.com/ragab0/Leon",
+    gitLinks: ["https://github.com/ragab0/Leon"],
     skills: ["HTML5", "CSS3"],
   },
 
@@ -192,7 +223,7 @@ export const moreProjectsApi = [
     name: "Travel-Reservation",
     srcImg: TravelReservation,
     link: "https://ragab0.github.io/travel-reservation",
-    gitLink: "https://github.com/ragab0/travel-reservation",
+    gitLinks: ["https://github.com/ragab0/travel-reservation"],
     skills: ["HTML", "CSS", "CSS-Float-Layout"],
   },
 
@@ -200,14 +231,14 @@ export const moreProjectsApi = [
     name: "My-Old-CV",
     srcImg: Resume,
     link: "https://ragab0.github.io/Ragab-Resume/",
-    gitLink: "https://github.com/ragab0/Ragab-Resume",
+    gitLinks: ["https://github.com/ragab0/Ragab-Resume"],
     skills: ["HTML5", "CSS3", "TailwindCSS", "SEO"],
   },
   {
     name: "Small-React-Apps",
     srcImg: FirstReactApps,
     link: "https://step-two.onrender.com",
-    gitLink: "https://github.com/ragab0/first-react-apps",
+    gitLinks: ["https://github.com/ragab0/first-react-apps"],
     skills: ["React..."],
     description:
       "My first apps built in react at the at the beginning of the trip. I learned about how to use React but how to think in React",
