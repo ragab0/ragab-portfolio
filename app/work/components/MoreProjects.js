@@ -48,6 +48,7 @@ export default function MoreProjects({ projects = [] }) {
                   <h3 className="mb-0">{name}</h3>
                   {gitLinks.map((gitLink, i) => (
                     <Link
+                      key={i}
                       href={gitLink || "#"}
                       target={gitLink ? "_blank" : "_top"}
                       className="flex items-end hover:opacity-80 font-bold "

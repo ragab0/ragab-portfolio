@@ -1,7 +1,9 @@
+import DevBlog from "@/assets/imgs/projects/dev_blog/dev_blog1.png";
 import Nabza from "@/assets/imgs/projects/Nabza/home1.png";
 import EdepediaPreview from "@/assets/imgs/projects/EDEPedia/EDEPedia-preview.png";
-import TodPreview from "@/assets/imgs/projects/TOD/TodPreview2.png";
-import Portfolio from "@/assets/imgs/projects/portfolio.png";
+import TodPreview from "@/assets/imgs/projects/TOD/tod_v3.png";
+import Diffing from "@/assets/imgs/projects/Diffing/gateway.png";
+// import Portfolio from "@/assets/imgs/projects/portfolio.png";
 import Resume from "@/assets/imgs/projects/resume.png";
 import FirstReactApps from "@/assets/imgs/projects/first-react-apps.png";
 import LeResturant from "@/assets/imgs/projects/LeRestaurant/LeResturant.jpg";
@@ -9,7 +11,7 @@ import GPT3 from "@/assets/imgs/projects/GPT-3.png";
 import HooBank from "@/assets/imgs/projects/HooBank/HooBank.png";
 import Fitness from "@/assets/imgs/projects/fitness.png";
 import store from "@/assets/imgs/projects/comphy.png";
-import todoList from "@/assets/imgs/projects/todo-list.png";
+// import todoList from "@/assets/imgs/projects/todo-list.png";
 
 import NoxeImage from "@/assets/imgs/projects/Noxe/NoxePreview.jpg";
 import SimonImage from "@/assets/imgs/projects/Simon/Simon.png";
@@ -19,6 +21,31 @@ import Kasper from "@/assets/imgs/projects/Kasper/kasper.jpg";
 import Leon from "@/assets/imgs/projects/Leon/Leon.jpg";
 
 export const featuredProjectsApi = [
+  // P00
+  {
+    name: "DevBlog",
+    srcImg: DevBlog,
+    link: "https://ragab-blog.vercel.app/",
+    gitLinks: [
+      "https://github.com/ragab0/blog-post-api",
+      "https://github.com/ragab0/blog-post",
+    ],
+    description: `
+      a modern blog app that allows users to create, edit, and delete blog posts, as well as view other users' posts and comments.
+    `,
+    coreSkills: [
+      "TypeScript",
+      "React.js",
+      "Shadcn",
+      "Tailwindcss",
+      "Redux Toolkit",
+      "React Hook Form",
+      "Nest.js",
+      "PostgreSQL",
+      "TypeORM",
+      "Swagger & REST client",
+    ],
+  },
   // P01
   {
     name: "Nabza - نبذة",
@@ -70,36 +97,6 @@ export const featuredProjectsApi = [
       "Socket.IO",
     ],
   },
-
-  // // P02
-  // {
-  //   name: "Assistant TOD",
-  //   srcImg: TodPreview,
-  //   link: "https://todo-tasks-manager.vercel.app",
-  //   gitLink: "https://github.com/ragab0/todo-list",
-  //   description: `
-  //   A smart task management app powered by NLP for efficient task handling, featuring a Progressive Web App (PWA) with offline support and WCAG accessibility standards. It includes a drag-and-drop Kanban board with customizable views, role-based user authentication, and integrations with various tools for a seamless user experience
-  //   `,
-  //   skills: [
-  //     "HTML5",
-  //     "CSS3",
-  //     "JavaScript",
-  //     "JSON",
-  //     "React",
-  //     "Next.js",
-  //     "TailwindCSS",
-  //     "Figma",
-  //   ],
-  //   coreSkills: [
-  //     "React.js",
-  //     "Next.js",
-  //     "Node.js",
-  //     "MySQL",
-  //     "NLP.js",
-  //     "TailwindCSS",
-  //   ],
-  //   inProgress: true,
-  // },
 
   // P03
   {
@@ -161,21 +158,40 @@ export const moreProjectsApi = [
     description: `عااااش يا بطـــل…`,
     skills: ["Next.js", "Rapid-API", "Figma", "TailwindCSS"],
   },
-
   {
-    name: "Noxe-Movies-App",
-    srcImg: NoxeImage,
-    link: "https://noxe-movies-app.vercel.app",
-    gitLinks: ["https://github.com/ragab0/noxe-movies-app"],
-    description: `Movie app integrated with TMDP API`,
-    skills: [
-      "React",
-      "React-Router-DOM",
-      "React Hook Form",
-      "Joi",
-      "Bootstrap",
-    ],
+    name: "TOD V03 (UnCompleted)",
+    srcImg: TodPreview,
+    link: "https://todo-tasks-manager.vercel.app",
+    gitLinks: ["https://github.com/ragab0/todo-list"],
+    description: `Task Management App V03`,
+    skills: ["JSON", "Next.js", "TailwindCSS", "Figma"],
+    inProgress: true,
   },
+  {
+    name: "Diffing",
+    srcImg: Diffing,
+    link: "#",
+    gitLinks: ["https://github.com/ragab0/diffing-extension"],
+    description: `
+      Chrome Extension and PDF parser generates classified documents and markdown format
+    `,
+    skills: ["React", "Python", "FastAPI"],
+  },
+
+  // {
+  //   name: "Noxe-Movies-App",
+  //   srcImg: NoxeImage,
+  //   link: "https://noxe-movies-app.vercel.app",
+  //   gitLinks: ["https://github.com/ragab0/noxe-movies-app"],
+  //   description: `Movie app integrated with TMDP API`,
+  //   skills: [
+  //     "React",
+  //     "React-Router-DOM",
+  //     "React Hook Form",
+  //     "Joi",
+  //     "Bootstrap",
+  //   ],
+  // },
 
   {
     name: "Le-Resturant",
