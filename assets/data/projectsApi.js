@@ -1,3 +1,4 @@
+import Formatopia from "@/assets/imgs/projects/format_topia/format_topia.png";
 import DevBlog from "@/assets/imgs/projects/dev_blog/dev_blog1.png";
 import Nabza from "@/assets/imgs/projects/Nabza/home1.png";
 import EdepediaPreview from "@/assets/imgs/projects/EDEPedia/EDEPedia-preview.png";
@@ -95,6 +96,26 @@ export const featuredProjectsApi = [
       "Bootstrap",
       "Chart.js",
       "Socket.IO",
+    ],
+  },
+
+  {
+    name: "Formatopia",
+    srcImg: Formatopia,
+    link: "https://format-topia.vercel.app/",
+    gitLinks: ["https://github.com/ragab0/format-topia"],
+    description: `
+      Text formatting & transformation tools. Convert case, trim spaces, preview markdown, and JSON.
+    `,
+    coreSkills: [
+      "TypeScript",
+      "Next.js",
+      "Zustand",
+      "Shadcn/ui",
+      "Tailwindcss",
+      "Dropzone",
+      "Json Viewer",
+      "Markdown Processing",
     ],
   },
 

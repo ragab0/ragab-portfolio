@@ -24,6 +24,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${mainFont.variable}`}>
         <div className="relative">
+          <div className="text-center text-sm text-gray-500 bg-gray-900 py-5">
+            <strong>Note As of 23 July 2025:</strong> Last main update was on
+            2024. This version of the site is DEPRECATED and it will be replaced
+            with a new version soon.
+          </div>
           <main className="relative min-h-screen px-4 mx-auto pb-32 max-w-6xl">
             <Cursor />
             <Navbar />
