@@ -1,6 +1,8 @@
 import Formatopia from "@/assets/imgs/projects/format_topia/format_topia.png";
 import DevBlog from "@/assets/imgs/projects/dev_blog/dev_blog1.png";
 import Nabza from "@/assets/imgs/projects/Nabza/home1.png";
+import Oasis from "@/assets/imgs/projects/Oasis/dash.png";
+import Wallet from "@/assets/imgs/projects/Wallet/wallet.png";
 import EdepediaPreview from "@/assets/imgs/projects/EDEPedia/EDEPedia-preview.png";
 import TodPreview from "@/assets/imgs/projects/TOD/tod_v3.png";
 import Diffing from "@/assets/imgs/projects/Diffing/gateway.png";
@@ -22,32 +24,62 @@ import Kasper from "@/assets/imgs/projects/Kasper/kasper.jpg";
 import Leon from "@/assets/imgs/projects/Leon/Leon.jpg";
 
 export const featuredProjectsApi = [
-  // P00
   {
-    name: "DevBlog",
-    srcImg: DevBlog,
-    link: "https://ragab-blog.vercel.app/",
+    name: "Ragab-Oasis",
+    srcImg: Oasis,
+    link: "https://oasis-ragab.netlify.app/dashboard",
     gitLinks: [
-      "https://github.com/ragab0/blog-post-api",
-      "https://github.com/ragab0/blog-post",
+      "https://github.com/ragab0/the-wild-oasis",
+      "https://github.com/ragab0/the-wild-oasis/#%EF%B8%8F-api--backend",
     ],
     description: `
-      a modern blog app that allows users to create, edit, and delete blog posts, as well as view other users' posts and comments.
+      A modern Airbnb-style listing and booking management dashboard built with React, TypeScript, and Supabase
     `,
     coreSkills: [
-      "TypeScript",
       "React.js",
+      "TypeScript.js",
+      "Recharts",
       "Shadcn",
-      "Tailwindcss",
-      "Redux Toolkit",
-      "React Hook Form",
-      "Nest.js",
+      "Zustand",
+      "Tanstack-React-Query",
+      "React-Hook-Form",
+      "Zod",
+      "Supabase",
       "PostgreSQL",
-      "TypeORM",
-      "Swagger & REST client",
     ],
   },
-  // P01
+  {
+    name: "The-Green-Wallet",
+    srcImg: Wallet,
+    link: null,
+    gitLinks: [
+      "https://github.com/ragab0/wallet-mobile",
+      "https://github.com/ragab0/wallet-backend",
+    ],
+    description: `
+     A modern, cross-platform mobile application for personal finance management
+    `,
+    coreSkills: [
+      "React.js",
+      "React-Native",
+      "Expo",
+      "TypeScript.js",
+      "Jotai",
+      "React-Query",
+      "Axios",
+      "Yup",
+
+      "Nest.js",
+      "PostgreSQL",
+      "Prisma",
+      "JWT",
+      "Passport.js",
+      "Nodemailer.js",
+      "Gmail",
+      "Apple",
+    ],
+  },
+
   {
     name: "Nabza - نبذة",
     srcImg: Nabza,
@@ -57,7 +89,7 @@ export const featuredProjectsApi = [
       "https://github.com/ragab0/nabza-platform",
     ],
     description: `
-      an AI-driven platform helping Arabic speakers to create professional and customizable CVs.
+      An AI-driven platform helping Arabic speakers to create professional and customizable CVs.
     `,
     coreSkills: [
       "React.js",
@@ -100,27 +132,6 @@ export const featuredProjectsApi = [
   },
 
   {
-    name: "Formatopia",
-    srcImg: Formatopia,
-    link: "https://format-topia.vercel.app/",
-    gitLinks: ["https://github.com/ragab0/format-topia"],
-    description: `
-      Text formatting & transformation tools. Convert case, trim spaces, preview markdown, and JSON.
-    `,
-    coreSkills: [
-      "TypeScript",
-      "Next.js",
-      "Zustand",
-      "Shadcn/ui",
-      "Tailwindcss",
-      "Dropzone",
-      "Json Viewer",
-      "Markdown Processing",
-    ],
-  },
-
-  // P03
-  {
     name: "GPT-3",
     srcImg: GPT3,
     link: "https://ragab-gpt-3.vercel.app/",
@@ -159,6 +170,54 @@ export const moreProjectsApi = [
     `,
     skills: ["Next.js", "Figma", "TailwindCSS"],
   },
+  // P00
+  {
+    name: "DevBlog",
+    srcImg: DevBlog,
+    link: "https://ragab-blog.vercel.app/",
+    gitLinks: [
+      "https://github.com/ragab0/blog-post-api",
+      "https://github.com/ragab0/blog-post",
+    ],
+    description: `
+      a modern blog app that allows users to create, edit, and delete blog posts, as well as view other users' posts and comments.
+    `,
+    coreSkills: [
+      "TypeScript",
+      "React.js",
+      "Shadcn",
+      "Tailwindcss",
+      "Redux Toolkit",
+      "React Hook Form",
+      "Nest.js",
+      "PostgreSQL",
+      "TypeORM",
+      "Swagger & REST client",
+    ],
+    skills: ["Next.js", "Nest.js", "Shadcn", "PostgreSQL"],
+  },
+
+  {
+    name: "Formatopia",
+    srcImg: Formatopia,
+    link: "https://format-topia.vercel.app/",
+    gitLinks: ["https://github.com/ragab0/format-topia"],
+    description: `
+      Text formatting & transformation tools. Convert case, trim spaces, preview markdown, and JSON.
+    `,
+    coreSkills: [
+      "TypeScript",
+      "Next.js",
+      "Zustand",
+      "Shadcn/ui",
+      "Tailwindcss",
+      "Dropzone",
+      "Json Viewer",
+      "Markdown Processing",
+    ],
+    skills: ["Next.js", "TypeScript", "Zustand", "Json Viewer"],
+  },
+
   {
     name: "Comphy-Sloth-Store",
     srcImg: store,
@@ -180,15 +239,6 @@ export const moreProjectsApi = [
     skills: ["Next.js", "Rapid-API", "Figma", "TailwindCSS"],
   },
   {
-    name: "TOD V03 (UnCompleted)",
-    srcImg: TodPreview,
-    link: "https://todo-tasks-manager.vercel.app",
-    gitLinks: ["https://github.com/ragab0/todo-list"],
-    description: `Task Management App V03`,
-    skills: ["JSON", "Next.js", "TailwindCSS", "Figma"],
-    inProgress: true,
-  },
-  {
     name: "Diffing",
     srcImg: Diffing,
     link: "#",
@@ -197,6 +247,15 @@ export const moreProjectsApi = [
       Chrome Extension and PDF parser generates classified documents and markdown format
     `,
     skills: ["React", "Python", "FastAPI"],
+  },
+  {
+    name: "TOD V03 (UnCompleted)",
+    srcImg: TodPreview,
+    link: "https://todo-tasks-manager.vercel.app",
+    gitLinks: ["https://github.com/ragab0/todo-list"],
+    description: `Task Management App V03`,
+    skills: ["JSON", "Next.js", "TailwindCSS", "Figma"],
+    inProgress: true,
   },
 
   // {

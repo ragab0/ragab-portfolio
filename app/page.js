@@ -1,5 +1,21 @@
 import Link from "next/link";
-import RagabBig from "@/assets/svgs/RagabBig";
+import Ragab0 from "@/assets/svgs/RagabBig";
+import ragab1 from "@/assets/ragab-picture.jpg";
+import ragab2 from "@/assets/ragab-eid.jpg";
+import Image from "next/image";
+
+export const metadata = {
+  title: "Ragab Eid - Software Developer Portfolio | Home",
+  description:
+    "Welcome to Ragab Eid's portfolio. Discover my expertise in web development, software engineering, and building exceptional digital experiences.",
+  openGraph: {
+    title: "Ragab Eid - Software Developer Portfolio",
+    description:
+      "Welcome to Ragab Eid's portfolio. Discover my expertise in web development and software engineering.",
+    url: "https://ragab.vercel.com",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
@@ -18,8 +34,14 @@ export default function Home() {
           About me
         </Link>
       </div>
-      <div className="ragab-img max-md:mx-12">
-        <RagabBig className="w-full h-full max-w-[400px]" />
+      <div className="max-md:mx-12 shadow-[12px_12px_5px_0] text-lightestNavy">
+        {/* <ragab0 className="w-full h-full max-w-[400px]" /> */}
+        <Image
+          alt="ragab-eid picture"
+          src={ragab1}
+          className="w-full h-full max-w-[400px] rounded-sm"
+        />
+        <img />
       </div>
     </div>
   );

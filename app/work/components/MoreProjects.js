@@ -44,19 +44,21 @@ export default function MoreProjects({ projects = [] }) {
             </Link>
             <figcaption className="flex-1 grid grid-rows-[1fr_auto]">
               <div>
-                <div className="flex items-start justify-between gab-2 mb-2">
+                <div className="flex items-end justify-between gab-2 mb-2">
                   <h3 className="mb-0">{name}</h3>
-                  {gitLinks.map((gitLink, i) => (
-                    <Link
-                      key={i}
-                      href={gitLink || "#"}
-                      target={gitLink ? "_blank" : "_top"}
-                      className="flex items-end hover:opacity-80 font-bold "
-                    >
-                      <Github width={25} className="block" />
-                      {!!i && i + 1}
-                    </Link>
-                  ))}
+                  <div className="flex items-center gap-2">
+                    {gitLinks.map((gitLink, i) => (
+                      <Link
+                        key={i}
+                        href={gitLink || "#"}
+                        target={gitLink ? "_blank" : "_top"}
+                        className="flex items-end hover:opacity-80 font-bold "
+                      >
+                        <Github width={25} className="block" />
+                        {!!i && `#${i + 1}`}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
                 <p className="text-lightSlate">{description}</p>
               </div>

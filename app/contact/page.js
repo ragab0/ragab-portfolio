@@ -4,6 +4,19 @@ import Toast from "@/components/alert/Alert";
 import Loading from "./loading";
 import "./form.css";
 
+// export const metadata = {
+//   title: "Contact Ragab Eid - Get in Touch | Software Developer",
+//   description:
+//     "Get in touch with Ragab Eid. Contact me for software development projects, collaborations, or inquiries about my services.",
+//   openGraph: {
+//     title: "Contact Ragab Eid",
+//     description:
+//       "Get in touch with Ragab Eid for software development projects and collaborations.",
+//     url: "https://ragab.vercel.com/contact",
+//     type: "website",
+//   },
+// };
+
 export default function ContactPage() {
   const initState = {
     name: "",
