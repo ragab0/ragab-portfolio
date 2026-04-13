@@ -40,6 +40,7 @@ export default function MoreProjects({ projects = [] }) {
                 src={srcImg}
                 className="min-w-full min-h-full object-cover 
                   hover:scale-110"
+                placeholder="blur"
               />
             </Link>
             <figcaption className="flex-1 grid grid-rows-[1fr_auto]">

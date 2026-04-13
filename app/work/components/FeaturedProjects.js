@@ -34,6 +34,7 @@ export default function FeaturedProjects({ projects }) {
                 src={srcImg}
                 className="min-w-full min-h-full object-cover 
                   hover:scale-110"
+                placeholder="blur"
               />
             </Link>
             <figcaption className="w-full md:w-1/2 max-w-lg ">

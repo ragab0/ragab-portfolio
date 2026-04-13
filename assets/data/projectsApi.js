@@ -2,6 +2,7 @@ import Formatopia from "@/assets/imgs/projects/format_topia/format_topia.png";
 import DevBlog from "@/assets/imgs/projects/dev_blog/dev_blog1.png";
 import Nabza from "@/assets/imgs/projects/Nabza/home1.png";
 import Oasis from "@/assets/imgs/projects/Oasis/dash.png";
+import OasisGuest from "@/assets/imgs/projects/Oasis/guest.png";
 import Wallet from "@/assets/imgs/projects/Wallet/wallet.png";
 import EdepediaPreview from "@/assets/imgs/projects/EDEPedia/EDEPedia-preview.png";
 import TodPreview from "@/assets/imgs/projects/TOD/tod_v3.png";
@@ -25,9 +26,9 @@ import Leon from "@/assets/imgs/projects/Leon/Leon.jpg";
 
 export const featuredProjectsApi = [
   {
-    name: "Ragab-Oasis",
+    name: "Ragab-Oasis-Dashboard",
     srcImg: Oasis,
-    link: "https://oasis-ragab.netlify.app/dashboard",
+    link: "https://oasis-ragab.netlify.app",
     gitLinks: [
       "https://github.com/ragab0/the-wild-oasis",
       "https://github.com/ragab0/the-wild-oasis/#%EF%B8%8F-api--backend",
@@ -46,6 +47,29 @@ export const featuredProjectsApi = [
       "Zod",
       "Supabase",
       "PostgreSQL",
+    ],
+  },
+  {
+    name: "Ragab-Oasis-Guest",
+    srcImg: OasisGuest,
+    link: "https://ragab-oasis-guest.vercel.app/",
+    gitLinks: [
+      "https://github.com/ragab0/the-wild-oasis-guest",
+      "https://github.com/ragab0/the-wild-oasis/#%EF%B8%8F-api--backend",
+    ],
+    description: `
+      A modern Airbnb-style listing and booking app built with React, TypeScript, and Next.js
+    `,
+    coreSkills: [
+      "Next.js",
+      "React.js",
+      "TypeScript.js",
+      "Recharts",
+      "Shadcn",
+      "Zustand",
+      "Tanstack-React-Query",
+      "React-Hook-Form",
+      "Zod",
     ],
   },
   {
@@ -83,7 +107,7 @@ export const featuredProjectsApi = [
   {
     name: "Nabza - نبذة",
     srcImg: Nabza,
-    link: "https://www.ragab.shop/",
+    link: "https://www.nabza.online/",
     gitLinks: [
       "https://github.com/ragab0/nabza-platform-api",
       "https://github.com/ragab0/nabza-platform",

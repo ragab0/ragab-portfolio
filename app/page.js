@@ -2,6 +2,7 @@ import Link from "next/link";
 import Ragab0 from "@/assets/svgs/RagabBig";
 import ragab1 from "@/assets/ragab-picture.jpg";
 import ragab2 from "@/assets/ragab-eid.jpg";
+import ragabNew from "@/assets/new-ragab.jpg";
 import Image from "next/image";
 
 export const metadata = {
@@ -37,9 +38,10 @@ export default function Home() {
       <div className="max-md:mx-12 shadow-[12px_12px_5px_0] text-lightestNavy">
         {/* <ragab0 className="w-full h-full max-w-[400px]" /> */}
         <Image
-          alt="ragab-eid picture"
-          src={ragab1}
+          alt="Ragab Eid Personal Main Picture"
+          src={ragabNew}
           className="w-full h-full max-w-[400px] rounded-sm"
+          placeholder="blur"
         />
         <img />
       </div>
