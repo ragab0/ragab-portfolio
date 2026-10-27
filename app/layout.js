@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "Ragab Eid Portfolio",
     images: [
       {
-        url: "https://ragab.vercel.app/ragab-picture.jpg",
+        url: "https://ragab.vercel.app/images/ragab-picture.webp",
         width: 1200,
         height: 630,
         alt: "Ragab Eid - Software Developer",
@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
     name: "Ragab Eid",
     url: "https://ragab.vercel.com",
     jobTitle: "Software Developer",
-    image: "https://ragab.vercel.com/ragab-picture.jpg",
+    image: "https://ragab.vercel.com/images/ragab-picture.webp",
     sameAs: ["https://linkedin.com/in/ragab-eid", "https://github.com/ragab0"],
     description:
       "A software developer specializing in building exceptional web applications",

@@ -1,28 +1,25 @@
-import Formatopia from "@/assets/imgs/projects/format_topia/format_topia.png";
-import DevBlog from "@/assets/imgs/projects/dev_blog/dev_blog1.png";
-import Nabza from "@/assets/imgs/projects/Nabza/home1.png";
-import Oasis from "@/assets/imgs/projects/Oasis/dash.png";
-import OasisGuest from "@/assets/imgs/projects/Oasis/guest.png";
-import Wallet from "@/assets/imgs/projects/Wallet/wallet.png";
-import EdepediaPreview from "@/assets/imgs/projects/EDEPedia/EDEPedia-preview.png";
-import TodPreview from "@/assets/imgs/projects/TOD/tod_v3.png";
-import Diffing from "@/assets/imgs/projects/Diffing/gateway.png";
-// import Portfolio from "@/assets/imgs/projects/portfolio.png";
-import Resume from "@/assets/imgs/projects/resume.png";
-import FirstReactApps from "@/assets/imgs/projects/first-react-apps.png";
-import LeResturant from "@/assets/imgs/projects/LeRestaurant/LeResturant.jpg";
-import GPT3 from "@/assets/imgs/projects/GPT-3.png";
-import HooBank from "@/assets/imgs/projects/HooBank/HooBank.png";
-import Fitness from "@/assets/imgs/projects/fitness.png";
-import store from "@/assets/imgs/projects/comphy.png";
-// import todoList from "@/assets/imgs/projects/todo-list.png";
-
-import NoxeImage from "@/assets/imgs/projects/Noxe/NoxePreview.jpg";
-import SimonImage from "@/assets/imgs/projects/Simon/Simon.png";
-import Resto from "@/assets/imgs/projects/RestoRestaurant/Resto.png";
-import TravelReservation from "@/assets/imgs/projects/TravelReservation/TravelReservation.jpg";
-import Kasper from "@/assets/imgs/projects/Kasper/kasper.jpg";
-import Leon from "@/assets/imgs/projects/Leon/Leon.jpg";
+import Formatopia from "@/assets/imgs/projects/format_topia/format_topia.webp";
+import DevBlog from "@/assets/imgs/projects/dev_blog/dev_blog1.webp";
+import Nabza from "@/assets/imgs/projects/Nabza/home1.webp";
+import Oasis from "@/assets/imgs/projects/Oasis/dash.webp";
+import OasisGuest from "@/assets/imgs/projects/Oasis/guest.webp";
+import Wallet from "@/assets/imgs/projects/Wallet/wallet.webp";
+import EdepediaPreview from "@/assets/imgs/projects/EDEPedia/EDEPedia-preview.webp";
+import TodPreview from "@/assets/imgs/projects/TOD/tod_v3.webp";
+import Diffing from "@/assets/imgs/projects/Diffing/gateway.webp";
+import Resume from "@/assets/imgs/projects/resume.webp";
+import FirstReactApps from "@/assets/imgs/projects/first-react-apps.webp";
+import LeResturant from "@/assets/imgs/projects/LeRestaurant/LeResturant.webp";
+import GPT3 from "@/assets/imgs/projects/GPT-3.webp";
+import HooBank from "@/assets/imgs/projects/HooBank/HooBank.webp";
+import Fitness from "@/assets/imgs/projects/fitness.webp";
+import store from "@/assets/imgs/projects/comphy.webp";
+import SimonImage from "@/assets/imgs/projects/Simon/Simon.webp";
+import Resto from "@/assets/imgs/projects/RestoRestaurant/Resto.webp";
+import TravelReservation from "@/assets/imgs/projects/TravelReservation/TravelReservation.webp";
+import Kasper from "@/assets/imgs/projects/Kasper/kasper.webp";
+import Leon from "@/assets/imgs/projects/Leon/Leon.webp";
+import NoxeImage from "@/assets/imgs/projects/Noxe/NoxePreview.webp";
 
 export const featuredProjectsApi = [
   {
