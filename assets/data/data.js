@@ -1,18 +1,18 @@
 export const links = [
   {
     name: "home",
-    router: "/",
+    router: "#home",
   },
   {
     name: "about",
-    router: "/about",
+    router: "#about",
   },
   {
     name: "work",
-    router: "/work",
+    router: "#work",
   },
   {
-    name: "mail me",
-    router: "/contact",
+    name: "contact",
+    router: "#contact",
   },
 ];
