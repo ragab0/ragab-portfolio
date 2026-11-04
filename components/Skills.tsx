@@ -74,7 +74,10 @@ function CategorySection({
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-32 relative overflow-hidden bg-aboutBg">
+    <section
+      id="skills"
+      className="pt-32 pb-48 relative overflow-hidden bg-secondryBg"
+    >
       {/* Soft ambient glow */}
       {/* <div
         aria-hidden
@@ -85,7 +88,7 @@ export default function Skills() {
         className="bg-grid pointer-events-none absolute inset-0 opacity-10"
       /> */}
 
-      <div className="container mx-auto max-w-7xl relative z-10 px-4 sm:px-6 lg:px-8">
+      <div className="container relative z-10">
         {/* Section Title */}
         <div className="mb-24 text-center">
           <h2 className="text-textPrimary text-4xl md:text-5xl font-bold mb-6 mx-auto text-center">
@@ -97,7 +100,7 @@ export default function Skills() {
           </p>
         </div>
 
-        {/* Categories */}
+        {/* Section content */}
         <div className="space-y-32">
           {CATEGORIES.map((category, index) => (
             <CategorySection

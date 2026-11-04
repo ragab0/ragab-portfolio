@@ -8,9 +8,9 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex items-center min-h-[calc(100vh_-_100px)] relative overflow-hidden bg-heroBg pt-48 pb-32 lg:pt-20 lg:pb-0"
+      className="flex items-center min-h-[calc(100vh_-_100px)] relative overflow-hidden bg-mainBg pt-48 pb-32 lg:pt-20 lg:pb-0"
     >
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 space-y-8 text-center lg:text-left order-2 lg:order-1">
@@ -51,7 +51,7 @@ export default function Hero() {
 
           {/* Right Content - Hero Avatar */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="relative group w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]">
+            <div className="relative group w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[350px] lg:h-[350px]">
               {/* Outer Glow */}
               <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -66,7 +66,7 @@ export default function Hero() {
                   alt="Ragab Eid"
                   fill
                   className="object-cover object-top transition-all duration-700 group-hover:scale-105"
-                  sizes="(max-width: 640px) 192px, (max-width: 768px) 256px, (max-width: 1024px) 320px, 400px"
+                  sizes="(max-width: 640px) 192px, (max-width: 768px) 256px, (max-width: 1024px) 320px, 350px"
                   priority
                 />
                 {/* Gradient Overlay */}

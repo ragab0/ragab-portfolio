@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ArrowButton({ href = "#about", label = "About" }) {
+export default function ArrowButton({ href = "#skills", label = "Skills" }) {
   return (
     <Link
       href={href}

@@ -45,9 +45,9 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
       {/* Dev Notice */}
-      <div className="bg-primary/10 border-b border-primary/20 py-2 text-center text-[10px] md:text-xs text-textSecondary px-6 relative z-50">
-        This website is under development (Oct 25 to 10 Nov). Access the old
-        website:{" "}
+      <div className="bg-secondryBg border-b border-primary/20 py-2 text-center text-sm md:text-xs text-textSecondary px-6 relative z-50">
+        This website is currently under development (Starting from Oct 25 to 20
+        Nov). The old website:{" "}
         <a
           href="https://ragab-portfolio-git-legend-ragab0s-projects.vercel.app/"
           className="text-primary hover:underline ml-1"
@@ -64,7 +64,7 @@ export default function Navbar() {
             : "bg-transparent py-8",
         )}
       >
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
+        <div className="container flex justify-between items-center">
           <Link
             href="#home"
             className="text-2xl font-bold text-textPrimary z-[60]"

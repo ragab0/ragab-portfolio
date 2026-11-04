@@ -3,8 +3,10 @@ import WaveDivider from "@/components/dividers/WaveDivider";
 // import DiagonalDivider from "@/components/dividers/DiagonalDivider";
 import ArrowButton from "@/components/ArrowButton";
 import Skills from "@/components/Skills";
+import Journey from "@/components/Journey";
 // import Work from "@/components/Work";
 import Contact from "@/components/Contact";
+import ZigzagDivider from "@/components/dividers/ZigzagDivider";
 
 export const metadata = {
   title: "Ragab Eid - Software Developer Portfolio",
@@ -21,7 +23,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="home flex flex-col">
       <div className="relative">
         <Hero />
         <div className="relative -translate-y-20 z-30">
@@ -29,7 +31,15 @@ export default function Home() {
         </div>
         <WaveDivider />
       </div>
-      <Skills />
+      <div className="relative">
+        <Skills />
+        <ZigzagDivider transition="skills-to-experience" />
+      </div>
+      <div className="relative">
+        <Journey />
+        {/* <WaveDivider /> */}
+      </div>
+
       {/* <DiagonalDivider nextColor="hsl(var(--bg-tertiary))" /> */}
       {/* <Work /> */}
       {/* <WaveDivider /> */}

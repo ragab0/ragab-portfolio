@@ -168,6 +168,14 @@
   body h3 {
     @apply text-lg sm:text-xl xl:text-2xl mb-3;
   }
+
+  body .home > div > section::nth-of-type(2n) {
+    @apply bg-mainBg;
+  }
+
+  body .home > div > section::nth-of-type(2n + 1) {
+    @apply bg-secondryBg;
+  }
 }
 
 @layer components {
@@ -293,6 +301,72 @@
     100% {
       background-position: 0% 100%;
     }
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+.tl-track {
+  /* Equivalent of offset: ["start 80%", "end 20%"] */
+  view-timeline-name: --tl-progress;
+  view-timeline-axis: block;
+  view-timeline-inset: 20% 20%;
+}
+
+.tl-rail,
+.tl-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 18px;
+  width: 2px;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.tl-rail {
+  z-index: 0;
+  background: hsl(var(--border) / 0.3); /* adjust to your token */
+}
+
+.tl-line {
+  z-index: 1;
+  background: hsl(var(--primary)); /* adjust to your token */
+  box-shadow:
+    0 0 16px rgba(100, 255, 218, 0.4),
+    0 0 4px rgba(100, 255, 218, 0.8);
+  transform-origin: top;
+  transform: translateX(-50%) scaleY(1); /* fallback: fully drawn */
+}
+
+@supports (animation-timeline: view()) {
+  .tl-line {
+    transform: translateX(-50%) scaleY(0);
+    animation: tl-grow linear both;
+    animation-timeline: --tl-progress;
+    animation-range: cover 0% cover 100%;
+  }
+}
+
+@keyframes tl-grow {
+  to {
+    transform: translateX(-50%) scaleY(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tl-line {
+    animation: none;
+    transform: translateX(-50%) scaleY(1);
   }
 }
 

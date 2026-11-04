@@ -18,8 +18,8 @@ module.exports = {
         textSecondary: "hsl(var(--text-secondary))",
         textMuted: "hsl(var(--text-muted))",
 
-        heroBg: "var(--section-hero-bg)",
-        aboutBg: "var(--section-about-bg)",
+        mainBg: "var(--section-hero-bg)",
+        secondryBg: "var(--section-about-bg)",
 
         mainColor: "var(--main-color)",
         mainColorLight: "var(--main-color-light)",

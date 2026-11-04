@@ -198,6 +198,13 @@
   --divider-transition-4: var(--contact-to-footer-5);
 }
 
+.zigzag-divider[data-transition="skills-to-experience"] {
+  --divider-transition-1: var(--services-preview-to-blog-2);
+  --divider-transition-2: var(--services-preview-to-blog-3);
+  --divider-transition-3: var(--services-preview-to-blog-4);
+  --divider-transition-4: var(--services-preview-to-blog-5);
+}
+
 .zigzag-divider[data-transition="pricing-to-faq"],
 .zigzag-divider[data-transition="cta-to-footer"] {
   --divider-transition-1: hsl(var(--background) / 0.4);
@@ -224,4 +231,29 @@
 .zigzag-layer-4 {
   fill: var(--divider-transition-4);
   transition: fill 0.3s ease;
+}
+
+/*  */
+.zigzag-scroll {
+  animation: zigzag-scroll var(--zigzag-dur, 10s) linear infinite;
+  animation-direction: var(--zigzag-dir, normal);
+  will-change: transform;
+}
+
+@keyframes zigzag-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--zigzag-period, 200px)));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zigzag-scroll {
+    animation: none;
+  }
+  .zigzag-scroll animate {
+    display: none;
+  }
 }

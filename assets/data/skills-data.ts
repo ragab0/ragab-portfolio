@@ -39,6 +39,7 @@ export const CATEGORIES: Category[] = [
       { name: "Express.js", icon: icon("express-js.svg") },
       { name: "Nest.js", icon: icon("nest-js.svg") },
       { name: "MongoDB", icon: icon("mongodb.svg") },
+      { name: "PostgreSQL", icon: icon("postgresql.svg") },
       { name: "Next.js", icon: icon("nextjs.svg") },
     ],
   },
@@ -69,6 +70,6 @@ export const ALSO_EXPERIENCED_WITH = [
   "Vercel",
   "SQLite",
   "MySQL",
-  "PostgreSQL",
+  "Prisma",
   "Socket.IO",
 ];
