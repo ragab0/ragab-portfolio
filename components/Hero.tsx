@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex items-center min-h-[calc(100vh_-_100px)] relative overflow-hidden bg-mainBg pt-48 pb-32 lg:pt-20 lg:pb-0"
+      className="flex items-center min-h-[calc(100vh_-_100px)] relative overflow-hidden pt-48 pb-32 lg:pt-20 lg:pb-0"
     >
       <div className="container relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">

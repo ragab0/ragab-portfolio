@@ -42,8 +42,8 @@ function TimelineItem({
           className={cn(
             "w-[14px] h-[14px] rounded-full shrink-0 relative z-[3]",
             type === "work"
-              ? "bg-primary shadow-[0_0_0_3px_var(--section-about-bg),0_0_0_5px_rgba(128,128,128,0.2)]"
-              : "bg-textMuted shadow-[0_0_0_3px_var(--section-about-bg),0_0_0_5px_rgba(128,128,128,0.1)]",
+              ? "bg-primary shadow-[0_0_0_3px_var(--secondary-bg),0_0_0_5px_rgba(128,128,128,0.2)]"
+              : "bg-textMuted shadow-[0_0_0_3px_var(--secondary-bg),0_0_0_5px_rgba(128,128,128,0.1)]",
           )}
         />
       </div>

@@ -1,5 +1,10 @@
-"use client";
 import "./dividers.css";
+
+interface WaveDividerProps {
+  transition?: string;
+  flip?: boolean;
+  className?: string;
+}
 
 const waves = [
   {
@@ -70,20 +75,15 @@ const waves = [
 
 /**
  * Props
- * - nextColor:  any CSS color (e.g. "hsl(var(--bg-secondary))"). When set, all
- *               layers use this color with their own opacity, and the
- *               `wave-layer-N` CSS classes are skipped so they can't override it.
- *               When omitted, colors come from the CSS variables
- *               (--divider-transition-N) as before.
  * - transition: value for data-transition, picks the CSS variable set.
  * - flip:       rotates the divider 180deg (the old component did this).
  * - className:  extra classes for the wrapper.
  */
 export default function WaveDivider({
-  transition = "hero-to-about",
+  transition = "main-to-secondary",
   flip = false,
   className = "",
-}) {
+}: WaveDividerProps) {
   return (
     <div
       className={`wave-divider ${flip ? "rotate-180" : ""} ${className}`.trim()}
@@ -99,7 +99,6 @@ export default function WaveDivider({
           <path
             key={layerClass}
             className={layerClass}
-            // fill={nextColor}
             d={d}
             fillOpacity={fillOpacity}
           >

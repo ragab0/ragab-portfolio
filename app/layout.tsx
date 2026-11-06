@@ -5,25 +5,29 @@ import Cursor from "@/components/Cursor";
 import "./globals.css";
 
 export const metadata = {
-  title: "Ragab Eid - Software Developer & Web Developer Portfolio",
+  title: "Ragab Eid | Software Developer & Web Developer Portfolio",
   description:
     "Ragab Eid is a software developer specializing in building exceptional web applications. Explore my portfolio of projects and expertise in web development.",
   keywords:
-    "Ragab, Ragab Eid, Ragab Portfolio, Ragab Eid Portfolio, software developer, web developer, portfolio, web applications",
+    "Ragab, Ragab Eid, Ragab Portfolio, Ragab Eid Portfolio, software developer, web developer, portfolio, web applications, frontend developer, React developer, Next.js developer",
   authors: [{ name: "Ragab Eid" }],
   creator: "Ragab Eid",
+  metadataBase: new URL("https://ragab-eid.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Ragab Eid - Software Developer & Web Developer Portfolio",
+    title: "Ragab Eid | Software Developer Portfolio",
     description:
       "Ragab Eid is a software developer specializing in building exceptional web applications.",
-    url: "https://ragab.vercel.com",
+    url: "/",
     siteName: "Ragab Eid Portfolio",
     images: [
       {
-        url: "https://ragab.vercel.app/images/ragab-picture.webp",
+        url: "/images/ragab-eid.webp",
         width: 1200,
         height: 630,
-        alt: "Ragab Eid - Software Developer",
+        alt: "Ragab Eid - Software Developer Portfolio Preview",
       },
     ],
     locale: "en_US",
@@ -40,7 +44,6 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  canonical: "https://ragab.vercel.com",
 };
 
 const mainFont = Karla({
@@ -57,12 +60,16 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Ragab Eid",
-    url: "https://ragab.vercel.com",
+    url: "https://ragab-eid.vercel.app",
     jobTitle: "Software Developer",
-    image: "https://ragab.vercel.com/images/ragab-picture.webp",
+    image: "https://ragab-eid.vercel.app/images/ragab-picture.webp",
     sameAs: ["https://linkedin.com/in/ragab-eid", "https://github.com/ragab0"],
     description:
       "A software developer specializing in building exceptional web applications",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://ragab-eid.vercel.app",
+    },
     profiles: [
       {
         "@type": "ProfilePage",
@@ -84,7 +91,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
-        <link rel="canonical" href="https://ragab.vercel.com" />
+        <link rel="canonical" href="https://ragab-eid.vercel.com" />
       </head>
       <body className={`${mainFont.variable}`}>
         <div className="relative">

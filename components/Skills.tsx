@@ -74,14 +74,11 @@ function CategorySection({
 
 export default function Skills() {
   return (
-    <section
-      id="skills"
-      className="pt-32 pb-48 relative overflow-hidden bg-secondryBg"
-    >
+    <section id="skills" className="pt-32 pb-48 relative overflow-hidden">
       {/* Soft ambient glow */}
       {/* <div
         aria-hidden
-        className="about-gradient pointer-events-none absolute inset-0 opacity-40"
+        className="secondary-gradient pointer-events-none absolute inset-0 opacity-40"
       />
       <div
         aria-hidden

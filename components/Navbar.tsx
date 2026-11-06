@@ -45,7 +45,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
       {/* Dev Notice */}
-      <div className="bg-secondryBg border-b border-primary/20 py-2 text-center text-sm md:text-xs text-textSecondary px-6 relative z-50">
+      <div className="bg-secondrayBg border-b border-primary/20 py-2 text-center text-sm md:text-xs text-textSecondary px-6 relative z-50">
         This website is currently under development (Starting from Oct 25 to 20
         Nov). The old website:{" "}
         <a

@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import "./dividers.css";
 
 interface ZigzagDividerProps {
@@ -61,7 +58,7 @@ const layers = [
 ];
 
 export default function ZigzagDivider({
-  transition = "hero-to-about",
+  transition = "main-to-secondary",
   flip = false,
   className = "",
 }: ZigzagDividerProps) {

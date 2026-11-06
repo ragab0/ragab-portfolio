@@ -1,25 +1,23 @@
-export default function sitemap() {
+import { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://ragab-eid.vercel.app";
+
   return [
     {
-      url: "https://ragab.vercel.com",
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://ragab.vercel.com/about",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://ragab.vercel.com/work",
+      url: `${baseUrl}/work`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: "https://ragab.vercel.com/contact",
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,

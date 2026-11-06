@@ -9,14 +9,14 @@ import Contact from "@/components/Contact";
 import ZigzagDivider from "@/components/dividers/ZigzagDivider";
 
 export const metadata = {
-  title: "Ragab Eid - Software Developer Portfolio",
+  title: "Ragab Eid | Software Developer Portfolio",
   description:
     "Welcome to Ragab Eid's portfolio. Discover my expertise in web development, software engineering, and building exceptional digital experiences.",
   openGraph: {
-    title: "Ragab Eid - Software Developer Portfolio",
+    title: "Ragab Eid | Software Developer Portfolio",
     description:
       "Welcome to Ragab Eid's portfolio. Discover my expertise in web development and software engineering.",
-    url: "https://ragab.vercel.com",
+    url: "/",
     type: "website",
   },
 };
@@ -33,14 +33,13 @@ export default function Home() {
       </div>
       <div className="relative">
         <Skills />
-        <ZigzagDivider transition="skills-to-experience" />
+        <ZigzagDivider transition="secondary-to-main" />
       </div>
       <div className="relative">
         <Journey />
         {/* <WaveDivider /> */}
       </div>
 
-      {/* <DiagonalDivider nextColor="hsl(var(--bg-tertiary))" /> */}
       {/* <Work /> */}
       {/* <WaveDivider /> */}
       <Contact />

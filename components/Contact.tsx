@@ -49,7 +49,7 @@ export default function Contact() {
     <section id="contact" className="py-32 bg-bgSecondary">
       <div className="max-w-4xl mx-auto px-6">
         <div className="mb-16 text-center">
-          <h2 className="text-5xl md:text-7xl font-bold mb-4">
+          <h2 className="text-5xl md:text-7xl font-bold mb-4 text-center mx-auto">
             <span className="text-primary">Get In </span>
             <span className="text-textPrimary">Touch</span>
           </h2>

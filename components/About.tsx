@@ -19,7 +19,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-24 relative overflow-hidden bg-secondryBg"
+      className="py-24 relative overflow-hidden bg-secondrayBg"
     >
       {/* Background Effects */}
       <div className="absolute inset-0 bg-grid opacity-10"></div>
