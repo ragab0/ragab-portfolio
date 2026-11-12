@@ -1,8 +1,13 @@
-"use client";
 import Link from "next/link";
 import socials from "@/assets/data/socials-data";
 import Image from "next/image";
 import ragab from "@/assets/avatars/Ragab.webp";
+
+const roles = [
+  { label: "Software Dev" },
+  { label: "Frontend Dev" },
+  { label: "Full-Stack Dev" },
+];
 
 export default function Hero() {
   return (

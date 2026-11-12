@@ -61,7 +61,7 @@ export default function Navbar() {
           "w-full transition-all duration-300 px-6 relative z-50",
           scrolled || isOpen
             ? "bg-background/80 backdrop-blur-md py-4 shadow-lg"
-            : "bg-transparent py-8",
+            : "bg-transparent py-8"
         )}
       >
         <div className="container flex justify-between items-center">
@@ -83,7 +83,7 @@ export default function Navbar() {
                     "capitalize transition-colors duration-300",
                     activeHash === router
                       ? "text-primary"
-                      : "text-textSecondary hover:text-primary",
+                      : "text-textSecondary hover:text-primary"
                   )}
                 >
                   <span className="text-primary mr-1">0{i + 1}.</span>
@@ -118,7 +118,7 @@ export default function Navbar() {
           "fixed inset-0 bg-background/95 backdrop-blur-lg z-40 flex flex-col items-center justify-center transition-all duration-500 md:hidden",
           isOpen
             ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none translate-x-full",
+            : "opacity-0 pointer-events-none translate-x-full"
         )}
       >
         <ul className="flex flex-col items-center gap-8 font-mono text-lg">
@@ -133,7 +133,7 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={cn(
                   "capitalize transition-colors duration-300 flex flex-col items-center",
-                  activeHash === router ? "text-primary" : "text-textSecondary",
+                  activeHash === router ? "text-primary" : "text-textSecondary"
                 )}
               >
                 <span className="text-primary text-sm mb-1">0{i + 1}.</span>

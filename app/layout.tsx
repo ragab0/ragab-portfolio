@@ -1,7 +1,6 @@
 import { Karla } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Cursor from "@/components/Cursor";
 import "./globals.css";
 
 export const metadata = {
@@ -27,7 +26,7 @@ export const metadata = {
         url: "/images/ragab-eid.webp",
         width: 1200,
         height: 630,
-        alt: "Ragab Eid - Software Developer Portfolio Preview",
+        alt: "Ragab Eid | Software Developer Portfolio Preview",
       },
     ],
     locale: "en_US",
@@ -62,7 +61,7 @@ export default function RootLayout({ children }) {
     name: "Ragab Eid",
     url: "https://ragab-eid.vercel.app",
     jobTitle: "Software Developer",
-    image: "https://ragab-eid.vercel.app/images/ragab-picture.webp",
+    image: "https://ragab-eid.vercel.app/images/ragab-eid.webp",
     sameAs: ["https://linkedin.com/in/ragab-eid", "https://github.com/ragab0"],
     description:
       "A software developer specializing in building exceptional web applications",
@@ -91,12 +90,11 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
-        <link rel="canonical" href="https://ragab-eid.vercel.com" />
+        <link rel="canonical" href="https://ragab-eid.vercel.app" />
       </head>
       <body className={`${mainFont.variable}`}>
         <div className="relative">
           <main className="relative min-h-screen">
-            <Cursor />
             <Navbar />
             {children}
           </main>
